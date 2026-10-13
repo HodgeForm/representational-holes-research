@@ -1,0 +1,27 @@
+{
+  "title": "Measurement-Language Failure, Certificates, and Repair in Cellular Automata",
+  "description": "Scientific inquiry can fail before experiment selection when a supplied observable language maps distinct candidate worlds to the same evidence. This release defines executable questions as runnable measurement programs retained with their domains, outputs, provenance, and refusal conditions. In preregistered elementary-cellular-automata studies, Experiment 012 enumerated a finite language of 2,032 translation-invariant neighborhood-count programs per ambiguity class and tested selected locks on fresh states. Four of five classes were resolved. The unresolved Rules 3/17 class is the stronger result: their trajectories differ only by a spatial shift, so every observable in the frozen translation-invariant aggregate language agrees. A separately frozen parity extension then resolved the pair prospectively (0 mismatches for Rule 3; 217/256 for Rule 17). The contribution is a reproducible method for exposing a measurement-language collision, issuing a language-relative failure certificate, and testing a separately governed repair. It is not a new synthesis algorithm or evidence of human-inaccessible questions.",
+  "creators": [
+    {
+      "name": "Earnhart, Derek"
+    }
+  ],
+  "keywords": [
+    "executable observables",
+    "measurement languages",
+    "representational insufficiency",
+    "finite enumeration",
+    "cellular automata",
+    "reproducibility",
+    "open science"
+  ],
+  "version": "0.3.1",
+  "publication_date": "2026-10-13",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ImDerekEarnhart/representational-holes-research",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
