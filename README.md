@@ -1,6 +1,6 @@
 # From Search Failure to Language Limit
 
-**Private research release candidate — verified computational core, not yet published**
+**Private research release candidate — computational and formal CI checks pass; not yet public**
 
 Author: Derek Earnhart
 
@@ -12,33 +12,37 @@ Can a frozen measurement language make distinct dynamics observationally indisti
 
 Experiment 012 defines a frozen elementary-cellular-automata measurement language containing exactly **2,032 translation-invariant aggregate programs**: 8 evolution horizons × 254 nonconstant local-neighborhood masks.
 
-The supplied historical result and a separate audit reimplementation agree:
+The supplied result and a separate audit reimplementation agree:
 
-- four of five ambiguity classes were uniquely resolved on the prospective evaluation;
+- four of five ambiguity classes were uniquely resolved prospectively;
 - the residual class was Rules **3 and 17**;
 - under the supplied rule convention, `F17(x)_i = F3(x)_{i+1}`;
 - because every observable in the frozen DSL is translation-invariant, no program in that language can distinguish the pair;
-- a separately frozen parity-sensitive extension then produced **0/256 mismatches for Rule 3 and 217/256 for Rule 17**, yielding unique recovery in that prospective sample.
+- a separately frozen parity-sensitive extension produced **0/256 mismatches for Rule 3 and 217/256 for Rule 17**, yielding unique recovery on that prospective sample.
 
-The strongest scientific claim is therefore the **language-relative failure certificate plus prospective repair**, not the difficulty of the search. The accompanying preprint explicitly notes that resolving programs were dense in the other four solvable search spaces.
+The strongest scientific claim is therefore the **language-relative failure certificate plus prospective repair**, not the difficulty of the search. The preprint explicitly notes that resolving programs were dense in the other four solvable search spaces.
 
-## Audit status
+## Verification status
 
-Completed in this private release candidate:
+Completed:
 
-- plan/result hashes checked;
+- frozen plan/result SHA-256 values checked;
 - supplied replay rerun;
-- separate ECA implementation reproduced the reported endpoints and mismatch counts;
+- separate ECA implementation reproduced the prospective endpoints and mismatch counts;
 - all 2,032 frozen-DSL programs independently enumerated on an audit sample with zero Rule-3/17 separators;
 - LanguageLimitBench v0.1.1 release manifest and tests verified;
-- Lean source package manifest verified.
+- exact Lean artifact reconstructed from its recorded SHA-256;
+- Lean source scanned for unfinished proof placeholders;
+- **Lean 4.32.1 / Mathlib v4.32.1 build passed in GitHub Actions (8659 jobs).**
 
-Still pending:
+See `formal/LEAN_CI_RECEIPT.md` and `REPRODUCE.md`.
 
-- Lean compilation under the pinned toolchain;
-- complete public packaging of raw results/audit archive;
+Still pending before public launch:
+
 - external third-party reproduction;
-- metadata, licensing/IP review, DOI creation, and publication approval.
+- final manuscript author/contact/DOI fields;
+- metadata and licensing/IP review;
+- explicit approval to make the repository public and mint a Zenodo DOI.
 
 ## Non-claims
 
