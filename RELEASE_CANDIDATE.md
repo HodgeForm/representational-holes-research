@@ -2,13 +2,21 @@
 
 **Status: private release candidate. Do not publish yet.**
 
-This branch is intended to become a reproducible public research release after the remaining gates pass.
+This branch is a reproducible release candidate for the bounded Experiment 012 / 012C representational-hole result.
 
 ## Flagship claim
 
-In Experiment 012, the frozen ECA measurement DSL contains exactly 2,032 translation-invariant aggregate programs (8 horizons × 254 nonconstant neighborhood masks). Four of five ambiguity classes were uniquely resolved on fresh states. The residual Rule 3 / Rule 17 class is shift-equivalent under the frozen language and therefore cannot be separated by any program in that DSL. Experiment 012C separately froze an index-parity extension and prospectively obtained 0/256 mismatches for Rule 3 and 217/256 for Rule 17.
+Experiment 012 freezes an ECA measurement DSL containing exactly **2,032 translation-invariant aggregate programs** (8 horizons × 254 nonconstant neighborhood masks). Four of five ambiguity classes were uniquely resolved on fresh states. The residual Rule 3 / Rule 17 class is shift-equivalent under the frozen language and therefore cannot be separated by any program in that DSL.
 
-## Reproduce the computational result
+Experiment 012C separately froze an index-parity extension and prospectively obtained:
+
+- Rule 3: **0/256 mismatches**
+- Rule 17: **217/256 mismatches**
+- unique recovery: **yes**
+
+## Computational reproduction
+
+Run:
 
 ```bash
 python -m pip install numpy
@@ -19,21 +27,29 @@ Expected final line:
 
 `PASS: Experiment 012 and 012C reproduce the frozen result artifacts.`
 
-## Formal proof check
+GitHub Actions independently ran this verifier on the release-candidate branch and passed.
 
-The exact supplied Lean artifact is stored at:
+## Formal proof check — PASSED
 
-`artifacts/orbita_language_limit_lean_v0_1.zip`
+The exact supplied Lean ZIP is preserved as Base64 at:
 
-CI unpacks it and builds it with:
+`artifacts/orbita_language_limit_lean_v0_1.zip.b64`
 
-- Lean 4 v4.32.1
+Reconstructed ZIP SHA-256:
+
+`3ff0a2bf1034a34111f5060bdafe947daf46c3245f6a894d55a168b700b2409c`
+
+GitHub Actions built it successfully under:
+
+- Lean 4.32.1
 - Mathlib v4.32.1
-- `lake update`
-- `lake exe cache get`
-- `lake build`
+- Lake 5.0.0-src+f054605
 
-The CI result is the machine-check receipt; do not call the Lean artifact compiled until that job passes.
+CI reported:
+
+`Build completed successfully (8659 jobs).`
+
+See `formal/LEAN_CI_RECEIPT.md`.
 
 ## Evidence boundaries
 
@@ -42,21 +58,20 @@ Supported:
 - computational replay of Exp012/012C;
 - independent audit reimplementation;
 - analytic Rule 3/17 shift argument;
-- separately frozen prospective parity repair.
+- separately frozen prospective parity repair;
+- successful compilation of the supplied abstract Lean formalization.
 
 Not established:
 - AGI;
 - universal representational repair;
 - difficult or novel synthesis;
 - minimality of parity among all conceivable extensions;
-- third-party external replication;
+- external third-party replication;
 - peer review.
 
 ## Remaining public-release gates
 
-- CI Lean build passes.
-- Raw/release artifact manifest is finalized.
-- External reproduction is obtained.
+- External reproduction from the release candidate is obtained.
 - Paper author/contact placeholders are replaced.
 - Licensing and IP/public-disclosure review is completed.
 - Repository visibility change is explicitly approved.
