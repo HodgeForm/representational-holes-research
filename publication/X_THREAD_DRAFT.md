@@ -1,11 +1,45 @@
 # X thread — DRAFT, DO NOT POST YET
 
-1/ What if an AI fails not because it needs more computation, but because its available measurements cannot express the distinction needed to solve a problem?
+1/ What if an AI fails not because it needs more compute, but because its measurement language cannot express the distinction needed to solve the problem?
 
-2/ I investigate these failures as **representational holes**: two situations that remain indistinguishable within a specified measurement language, despite a task-relevant difference.
+I've been testing this as a **representational-hole** failure mode.
 
-3/ In a controlled cellular-automata experiment, earlier results report that a restricted translation-invariant language could not separate Rules 3 and 17. The important part is the proposed symmetry-based explanation—not merely that search failed.
+2/ In a controlled cellular-automata experiment, I froze a language of exactly **2,032 translation-invariant executable measurements**.
 
-4/ A targeted parity-sensitive measurement reportedly separated the rules on 217 of 256 tested states. The exact grammar, frozen protocol, and independent replay are essential to interpreting this result.
+It resolved 4/5 ambiguity classes on fresh states.
 
-5/ This is a bounded research result, not a claim of AGI. The larger question is whether discovery systems can diagnose limitations of their representations and test principled repairs. Paper and reproducibility materials: [VERIFIED RELEASE LINK / DOI]
+The fifth remained exactly tied: Rules 3 and 17.
+
+3/ The interesting part is that this wasn't merely a failed search.
+
+Under the experiment's rule convention, Rule 17's trajectory is a spatial shift of Rule 3's trajectory.
+
+Every measurement in the frozen language ignores that shift.
+
+So **no program in that language can separate them**.
+
+4/ I then froze one symmetry-breaking extension before testing it: index parity.
+
+On 256 fresh states:
+
+Rule 3: **0 mismatches**
+Rule 17: **217 mismatches**
+
+The collision was broken prospectively.
+
+5/ For the release audit, I reran the supplied code and independently reimplemented the ECA evaluation. The survivor sets and all mismatch counts reproduced.
+
+This is a bounded synthetic result—not AGI and not universal representation repair.
+
+6/ The broader research question:
+
+Can an AI learn to tell the difference between
+
+"search harder"
+
+and
+
+"your current language erased information you need"?
+
+Paper, code, hashes, and reproduction instructions: [RELEASE URL]
+DOI: [ZENODO DOI]
