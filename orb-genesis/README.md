@@ -71,10 +71,6 @@ Use 1–6 lowercase field names and 2–128 rows in each split. Values must be b
 
 Validation labels do not participate in search. A run can be scored once. If you use failures to design a new study, those failures are training evidence; obtain a fresh validation batch.
 
-## Bridge
-
-`bridge/bridge.py` only queues studies whose Python recomputation passed and whose per-study Lean status is `STUDY_KERNEL_CHECKED`. Paths are relative to this directory. See `bridge/README.md`. `BRIDGE-PLAN.md` is an undeployed design note.
-
 ## License
 
 Source code in this repository is MIT. Prose is CC-BY-4.0. Copyright 2026 Derek Earnhart. See the repository root `LICENSE` and `LICENSE-docs`.
