@@ -1,0 +1,249 @@
+{
+ "title": "Hard XOR",
+ "source": "synthetic; no measurement",
+ "fields": [
+  "site",
+  "a",
+  "b",
+  "noise"
+ ],
+ "language": [
+  "site"
+ ],
+ "training": [
+  {
+   "id": "train-0",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 0,
+    "noise": 1
+   },
+   "outcome": "off"
+  },
+  {
+   "id": "train-1",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 1,
+    "noise": 1
+   },
+   "outcome": "on"
+  },
+  {
+   "id": "train-2",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 0,
+    "noise": 1
+   },
+   "outcome": "on"
+  },
+  {
+   "id": "train-3",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 1,
+    "noise": 1
+   },
+   "outcome": "off"
+  },
+  {
+   "id": "train-4",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 0,
+    "noise": 2
+   },
+   "outcome": "off"
+  },
+  {
+   "id": "train-5",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 1,
+    "noise": 2
+   },
+   "outcome": "on"
+  },
+  {
+   "id": "train-6",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 0,
+    "noise": 2
+   },
+   "outcome": "on"
+  },
+  {
+   "id": "train-7",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 1,
+    "noise": 2
+   },
+   "outcome": "off"
+  },
+  {
+   "id": "train-8",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 0,
+    "noise": 3
+   },
+   "outcome": "off"
+  },
+  {
+   "id": "train-9",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 1,
+    "noise": 3
+   },
+   "outcome": "on"
+  },
+  {
+   "id": "train-10",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 0,
+    "noise": 3
+   },
+   "outcome": "on"
+  },
+  {
+   "id": "train-11",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 1,
+    "noise": 3
+   },
+   "outcome": "off"
+  },
+  {
+   "id": "train-12",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 0,
+    "noise": 4
+   },
+   "outcome": "off"
+  },
+  {
+   "id": "train-13",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 1,
+    "noise": 4
+   },
+   "outcome": "on"
+  },
+  {
+   "id": "train-14",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 0,
+    "noise": 4
+   },
+   "outcome": "on"
+  },
+  {
+   "id": "train-15",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 1,
+    "noise": 4
+   },
+   "outcome": "off"
+  }
+ ],
+ "validation_inputs": [
+  {
+   "id": "val-16",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 0,
+    "noise": 11
+   }
+  },
+  {
+   "id": "val-17",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 1,
+    "noise": 11
+   }
+  },
+  {
+   "id": "val-18",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 0,
+    "noise": 11
+   }
+  },
+  {
+   "id": "val-19",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 1,
+    "noise": 11
+   }
+  },
+  {
+   "id": "val-20",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 0,
+    "noise": 12
+   }
+  },
+  {
+   "id": "val-21",
+   "observables": {
+    "site": "lab",
+    "a": 0,
+    "b": 1,
+    "noise": 12
+   }
+  },
+  {
+   "id": "val-22",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 0,
+    "noise": 12
+   }
+  },
+  {
+   "id": "val-23",
+   "observables": {
+    "site": "lab",
+    "a": 1,
+    "b": 1,
+    "noise": 12
+   }
+  }
+ ]
+}

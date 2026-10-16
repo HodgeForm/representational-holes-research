@@ -1,0 +1,1255 @@
+{
+  "schema": "orb-genesis-bundle/1",
+  "run": {
+    "admission": "PROPOSED",
+    "baselines": [
+      {
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          }
+        ],
+        "name": "current_language",
+        "predictions": [
+          {
+            "covered": false,
+            "id": "test-8",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-9",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-10",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-11",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-12",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-13",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-14",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-15",
+            "prediction": null
+          }
+        ],
+        "training_conflicts": 8
+      },
+      {
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          },
+          {
+            "a": "phase",
+            "op": "field"
+          }
+        ],
+        "name": "single_field:phase",
+        "predictions": [
+          {
+            "covered": true,
+            "id": "test-8",
+            "prediction": "stable"
+          },
+          {
+            "covered": true,
+            "id": "test-9",
+            "prediction": "stable"
+          },
+          {
+            "covered": true,
+            "id": "test-10",
+            "prediction": "unstable"
+          },
+          {
+            "covered": true,
+            "id": "test-11",
+            "prediction": "unstable"
+          },
+          {
+            "covered": true,
+            "id": "test-12",
+            "prediction": "stable"
+          },
+          {
+            "covered": true,
+            "id": "test-13",
+            "prediction": "stable"
+          },
+          {
+            "covered": true,
+            "id": "test-14",
+            "prediction": "unstable"
+          },
+          {
+            "covered": true,
+            "id": "test-15",
+            "prediction": "unstable"
+          }
+        ],
+        "training_conflicts": 0
+      },
+      {
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          },
+          {
+            "a": "color",
+            "op": "field"
+          }
+        ],
+        "name": "single_field:color",
+        "predictions": [
+          {
+            "covered": false,
+            "id": "test-8",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-9",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-10",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-11",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-12",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-13",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-14",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-15",
+            "prediction": null
+          }
+        ],
+        "training_conflicts": 8
+      },
+      {
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          },
+          {
+            "a": "temperature",
+            "op": "field"
+          }
+        ],
+        "name": "single_field:temperature",
+        "predictions": [
+          {
+            "covered": false,
+            "id": "test-8",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-9",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-10",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-11",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-12",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-13",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-14",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-15",
+            "prediction": null
+          }
+        ],
+        "training_conflicts": 4
+      },
+      {
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          },
+          {
+            "a": "phase",
+            "op": "field"
+          },
+          {
+            "a": "color",
+            "op": "field"
+          },
+          {
+            "a": "temperature",
+            "op": "field"
+          }
+        ],
+        "name": "all_fields",
+        "predictions": [
+          {
+            "covered": false,
+            "id": "test-8",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-9",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-10",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-11",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-12",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-13",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-14",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-15",
+            "prediction": null
+          }
+        ],
+        "training_conflicts": 0
+      }
+    ],
+    "candidates": [
+      {
+        "complexity": 1,
+        "cost": 1,
+        "expression": {
+          "a": "phase",
+          "op": "field"
+        },
+        "id": "candidate-0",
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          },
+          {
+            "a": "phase",
+            "op": "field"
+          }
+        ],
+        "predictions": [
+          {
+            "covered": true,
+            "id": "test-8",
+            "prediction": "stable"
+          },
+          {
+            "covered": true,
+            "id": "test-9",
+            "prediction": "stable"
+          },
+          {
+            "covered": true,
+            "id": "test-10",
+            "prediction": "unstable"
+          },
+          {
+            "covered": true,
+            "id": "test-11",
+            "prediction": "unstable"
+          },
+          {
+            "covered": true,
+            "id": "test-12",
+            "prediction": "stable"
+          },
+          {
+            "covered": true,
+            "id": "test-13",
+            "prediction": "stable"
+          },
+          {
+            "covered": true,
+            "id": "test-14",
+            "prediction": "unstable"
+          },
+          {
+            "covered": true,
+            "id": "test-15",
+            "prediction": "unstable"
+          }
+        ],
+        "repeated_fraction": 1,
+        "training_conflicts": 0,
+        "training_witnesses": []
+      },
+      {
+        "complexity": 1,
+        "cost": 1,
+        "expression": {
+          "a": "temperature",
+          "op": "field"
+        },
+        "id": "candidate-2",
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          },
+          {
+            "a": "temperature",
+            "op": "field"
+          }
+        ],
+        "predictions": [
+          {
+            "covered": false,
+            "id": "test-8",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-9",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-10",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-11",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-12",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-13",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-14",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-15",
+            "prediction": null
+          }
+        ],
+        "repeated_fraction": 0,
+        "training_conflicts": 4,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-2"
+          ],
+          [
+            "train-1",
+            "train-3"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-5",
+            "train-7"
+          ]
+        ]
+      },
+      {
+        "complexity": 1,
+        "cost": 1,
+        "expression": {
+          "a": "color",
+          "op": "field"
+        },
+        "id": "candidate-1",
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          },
+          {
+            "a": "color",
+            "op": "field"
+          }
+        ],
+        "predictions": [
+          {
+            "covered": false,
+            "id": "test-8",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-9",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-10",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-11",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-12",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-13",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-14",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-15",
+            "prediction": null
+          }
+        ],
+        "repeated_fraction": 0,
+        "training_conflicts": 8,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-2"
+          ],
+          [
+            "train-0",
+            "train-3"
+          ],
+          [
+            "train-1",
+            "train-2"
+          ],
+          [
+            "train-1",
+            "train-3"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-4",
+            "train-7"
+          ],
+          [
+            "train-5",
+            "train-6"
+          ],
+          [
+            "train-5",
+            "train-7"
+          ]
+        ]
+      },
+      {
+        "complexity": 2,
+        "cost": 2,
+        "expression": {
+          "a": "phase",
+          "b": "color",
+          "op": "eq"
+        },
+        "id": "candidate-3",
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          },
+          {
+            "a": "phase",
+            "b": "color",
+            "op": "eq"
+          }
+        ],
+        "predictions": [
+          {
+            "covered": false,
+            "id": "test-8",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-9",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-10",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-11",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-12",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-13",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-14",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-15",
+            "prediction": null
+          }
+        ],
+        "repeated_fraction": 0,
+        "training_conflicts": 8,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-2"
+          ],
+          [
+            "train-0",
+            "train-3"
+          ],
+          [
+            "train-1",
+            "train-2"
+          ],
+          [
+            "train-1",
+            "train-3"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-4",
+            "train-7"
+          ],
+          [
+            "train-5",
+            "train-6"
+          ],
+          [
+            "train-5",
+            "train-7"
+          ]
+        ]
+      },
+      {
+        "complexity": 2,
+        "cost": 2,
+        "expression": {
+          "a": "phase",
+          "b": "temperature",
+          "op": "eq"
+        },
+        "id": "candidate-4",
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          },
+          {
+            "a": "phase",
+            "b": "temperature",
+            "op": "eq"
+          }
+        ],
+        "predictions": [
+          {
+            "covered": false,
+            "id": "test-8",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-9",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-10",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-11",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-12",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-13",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-14",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-15",
+            "prediction": null
+          }
+        ],
+        "repeated_fraction": 0,
+        "training_conflicts": 8,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-2"
+          ],
+          [
+            "train-0",
+            "train-3"
+          ],
+          [
+            "train-1",
+            "train-2"
+          ],
+          [
+            "train-1",
+            "train-3"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-4",
+            "train-7"
+          ],
+          [
+            "train-5",
+            "train-6"
+          ],
+          [
+            "train-5",
+            "train-7"
+          ]
+        ]
+      },
+      {
+        "complexity": 2,
+        "cost": 2,
+        "expression": {
+          "a": "color",
+          "b": "temperature",
+          "op": "eq"
+        },
+        "id": "candidate-5",
+        "model": [
+          {
+            "a": "shape",
+            "op": "field"
+          },
+          {
+            "a": "color",
+            "b": "temperature",
+            "op": "eq"
+          }
+        ],
+        "predictions": [
+          {
+            "covered": false,
+            "id": "test-8",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-9",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-10",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-11",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-12",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-13",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-14",
+            "prediction": null
+          },
+          {
+            "covered": false,
+            "id": "test-15",
+            "prediction": null
+          }
+        ],
+        "repeated_fraction": 0,
+        "training_conflicts": 8,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-2"
+          ],
+          [
+            "train-0",
+            "train-3"
+          ],
+          [
+            "train-1",
+            "train-2"
+          ],
+          [
+            "train-1",
+            "train-3"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-4",
+            "train-7"
+          ],
+          [
+            "train-5",
+            "train-6"
+          ],
+          [
+            "train-5",
+            "train-7"
+          ]
+        ]
+      }
+    ],
+    "collisions": {
+      "count": 8,
+      "witnesses": [
+        [
+          "train-0",
+          "train-2"
+        ],
+        [
+          "train-0",
+          "train-3"
+        ],
+        [
+          "train-1",
+          "train-2"
+        ],
+        [
+          "train-1",
+          "train-3"
+        ],
+        [
+          "train-4",
+          "train-6"
+        ],
+        [
+          "train-4",
+          "train-7"
+        ],
+        [
+          "train-5",
+          "train-6"
+        ],
+        [
+          "train-5",
+          "train-7"
+        ]
+      ]
+    },
+    "created_at": 1792160285.2834706,
+    "engine": "0.3.0",
+    "evaluation": {
+      "status": "HELDOUT_SUPPORTED",
+      "labels": [
+        {
+          "id": "test-8",
+          "outcome": "stable"
+        },
+        {
+          "id": "test-9",
+          "outcome": "stable"
+        },
+        {
+          "id": "test-10",
+          "outcome": "unstable"
+        },
+        {
+          "id": "test-11",
+          "outcome": "unstable"
+        },
+        {
+          "id": "test-12",
+          "outcome": "stable"
+        },
+        {
+          "id": "test-13",
+          "outcome": "stable"
+        },
+        {
+          "id": "test-14",
+          "outcome": "unstable"
+        },
+        {
+          "id": "test-15",
+          "outcome": "unstable"
+        }
+      ],
+      "labels_hash": "43a30407e4893175d67637080ab3e7502981b226a34b01b57ab9e4b2796b6372",
+      "freeze_hash": "21dbe777c55f6bfabaf2ee74ecfbff2ae98f71645cda038caabe0aff5d517717",
+      "candidates": [
+        {
+          "id": "candidate-0",
+          "metrics": {
+            "correct": 8,
+            "wrong": 0,
+            "abstained": 0,
+            "total": 8,
+            "coverage": 1.0,
+            "accuracy_all": 1.0
+          },
+          "counterexamples": []
+        },
+        {
+          "id": "candidate-2",
+          "metrics": {
+            "correct": 0,
+            "wrong": 0,
+            "abstained": 8,
+            "total": 8,
+            "coverage": 0.0,
+            "accuracy_all": 0.0
+          },
+          "counterexamples": []
+        },
+        {
+          "id": "candidate-1",
+          "metrics": {
+            "correct": 0,
+            "wrong": 0,
+            "abstained": 8,
+            "total": 8,
+            "coverage": 0.0,
+            "accuracy_all": 0.0
+          },
+          "counterexamples": []
+        },
+        {
+          "id": "candidate-3",
+          "metrics": {
+            "correct": 0,
+            "wrong": 0,
+            "abstained": 8,
+            "total": 8,
+            "coverage": 0.0,
+            "accuracy_all": 0.0
+          },
+          "counterexamples": []
+        },
+        {
+          "id": "candidate-4",
+          "metrics": {
+            "correct": 0,
+            "wrong": 0,
+            "abstained": 8,
+            "total": 8,
+            "coverage": 0.0,
+            "accuracy_all": 0.0
+          },
+          "counterexamples": []
+        },
+        {
+          "id": "candidate-5",
+          "metrics": {
+            "correct": 0,
+            "wrong": 0,
+            "abstained": 8,
+            "total": 8,
+            "coverage": 0.0,
+            "accuracy_all": 0.0
+          },
+          "counterexamples": []
+        }
+      ],
+      "baselines": [
+        {
+          "name": "current_language",
+          "metrics": {
+            "correct": 0,
+            "wrong": 0,
+            "abstained": 8,
+            "total": 8,
+            "coverage": 0.0,
+            "accuracy_all": 0.0
+          },
+          "counterexamples": []
+        },
+        {
+          "name": "single_field:phase",
+          "metrics": {
+            "correct": 8,
+            "wrong": 0,
+            "abstained": 0,
+            "total": 8,
+            "coverage": 1.0,
+            "accuracy_all": 1.0
+          },
+          "counterexamples": []
+        },
+        {
+          "name": "single_field:color",
+          "metrics": {
+            "correct": 0,
+            "wrong": 0,
+            "abstained": 8,
+            "total": 8,
+            "coverage": 0.0,
+            "accuracy_all": 0.0
+          },
+          "counterexamples": []
+        },
+        {
+          "name": "single_field:temperature",
+          "metrics": {
+            "correct": 0,
+            "wrong": 0,
+            "abstained": 8,
+            "total": 8,
+            "coverage": 0.0,
+            "accuracy_all": 0.0
+          },
+          "counterexamples": []
+        },
+        {
+          "name": "all_fields",
+          "metrics": {
+            "correct": 0,
+            "wrong": 0,
+            "abstained": 8,
+            "total": 8,
+            "coverage": 0.0,
+            "accuracy_all": 0.0
+          },
+          "counterexamples": []
+        }
+      ],
+      "selected_result": {
+        "id": "candidate-0",
+        "metrics": {
+          "correct": 8,
+          "wrong": 0,
+          "abstained": 0,
+          "total": 8,
+          "coverage": 1.0,
+          "accuracy_all": 1.0
+        },
+        "counterexamples": []
+      },
+      "baseline_advantage": 0.0
+    },
+    "freeze_hash": "21dbe777c55f6bfabaf2ee74ecfbff2ae98f71645cda038caabe0aff5d517717",
+    "id": "20fb5bb5-7639-4855-beb9-c4e2eb38e448",
+    "input": {
+      "costs": {
+        "color": 1,
+        "phase": 1,
+        "shape": 1,
+        "temperature": 1
+      },
+      "fields": [
+        "shape",
+        "phase",
+        "color",
+        "temperature"
+      ],
+      "language": [
+        "shape"
+      ],
+      "source": "synthetic-phase-v1; no physical measurement",
+      "title": "Synthetic missing-phase control",
+      "training": [
+        {
+          "id": "train-0",
+          "observables": {
+            "color": "dark",
+            "phase": "in",
+            "shape": "round",
+            "temperature": 10
+          },
+          "outcome": "stable"
+        },
+        {
+          "id": "train-1",
+          "observables": {
+            "color": "dark",
+            "phase": "in",
+            "shape": "round",
+            "temperature": 20
+          },
+          "outcome": "stable"
+        },
+        {
+          "id": "train-2",
+          "observables": {
+            "color": "dark",
+            "phase": "out",
+            "shape": "round",
+            "temperature": 10
+          },
+          "outcome": "unstable"
+        },
+        {
+          "id": "train-3",
+          "observables": {
+            "color": "dark",
+            "phase": "out",
+            "shape": "round",
+            "temperature": 20
+          },
+          "outcome": "unstable"
+        },
+        {
+          "id": "train-4",
+          "observables": {
+            "color": "light",
+            "phase": "in",
+            "shape": "square",
+            "temperature": 10
+          },
+          "outcome": "stable"
+        },
+        {
+          "id": "train-5",
+          "observables": {
+            "color": "light",
+            "phase": "in",
+            "shape": "square",
+            "temperature": 20
+          },
+          "outcome": "stable"
+        },
+        {
+          "id": "train-6",
+          "observables": {
+            "color": "light",
+            "phase": "out",
+            "shape": "square",
+            "temperature": 10
+          },
+          "outcome": "unstable"
+        },
+        {
+          "id": "train-7",
+          "observables": {
+            "color": "light",
+            "phase": "out",
+            "shape": "square",
+            "temperature": 20
+          },
+          "outcome": "unstable"
+        }
+      ],
+      "validation_inputs": [
+        {
+          "id": "test-8",
+          "observables": {
+            "color": "dark",
+            "phase": "in",
+            "shape": "round",
+            "temperature": 30
+          }
+        },
+        {
+          "id": "test-9",
+          "observables": {
+            "color": "dark",
+            "phase": "in",
+            "shape": "round",
+            "temperature": 40
+          }
+        },
+        {
+          "id": "test-10",
+          "observables": {
+            "color": "dark",
+            "phase": "out",
+            "shape": "round",
+            "temperature": 30
+          }
+        },
+        {
+          "id": "test-11",
+          "observables": {
+            "color": "dark",
+            "phase": "out",
+            "shape": "round",
+            "temperature": 40
+          }
+        },
+        {
+          "id": "test-12",
+          "observables": {
+            "color": "light",
+            "phase": "in",
+            "shape": "square",
+            "temperature": 30
+          }
+        },
+        {
+          "id": "test-13",
+          "observables": {
+            "color": "light",
+            "phase": "in",
+            "shape": "square",
+            "temperature": 40
+          }
+        },
+        {
+          "id": "test-14",
+          "observables": {
+            "color": "light",
+            "phase": "out",
+            "shape": "square",
+            "temperature": 30
+          }
+        },
+        {
+          "id": "test-15",
+          "observables": {
+            "color": "light",
+            "phase": "out",
+            "shape": "square",
+            "temperature": 40
+          }
+        }
+      ]
+    },
+    "input_hash": "32788e3845f958b426f366330c1236e817c24e7851e7190d658219797f796c8b",
+    "related_refuters": [],
+    "selected_id": "candidate-0"
+  },
+  "certificate": {
+    "witness_ids": [
+      "train-0",
+      "train-2"
+    ],
+    "encoding": {
+      "representation": "[\"round\"]",
+      "outcome_zero": "stable",
+      "outcome_one": "unstable"
+    },
+    "theorem": "obstruction",
+    "source": "-- Generated finite collision certificate; encoding must be verified against the data.\ntheorem obstruction : \u00ac \u2203 f : Nat \u2192 Nat, f 0 = 0 \u2227 f 0 = 1 := by\n  intro \u27e8f, ha, hb\u27e9\n  have impossible : (0 : Nat) = 1 := ha.symm.trans hb\n  cases impossible\n#print axioms obstruction\n",
+    "source_hash": "e38e9181194c13fc340ea8ab5f562fdaf8b408e87015304a8aab1d2e306c6747",
+    "status": "SOURCE_ONLY_UNCHECKED"
+  }
+}

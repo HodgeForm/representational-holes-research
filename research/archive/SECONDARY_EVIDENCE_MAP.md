@@ -1,3 +1,5 @@
+> **Archived staging note.** This memo is historical. It names uploads that are not in this repository. The public claim is `research/CLAIM_AUDIT.md` and the frozen files under `experiments/exp012/`. Instructions below to keep the repository private, or to treat the flagship result as unverified, are obsolete where they conflict with those public artifacts. See `research/archive/README.md`.
+
 # Secondary evidence map
 
 This file separates evidence that strengthens the broader representation-repair program from evidence required for the flagship Rule 3/17 launch claim.

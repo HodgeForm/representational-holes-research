@@ -1,0 +1,2046 @@
+{
+  "schema": "orb-genesis-bundle/1",
+  "run": {
+    "id": "4c010cb6-bcba-4f1c-aaa0-db3daa585930",
+    "created_at": 1792153406.8135521,
+    "engine": "0.3.0",
+    "input": {
+      "title": "Hard XOR",
+      "source": "synthetic; no measurement",
+      "fields": [
+        "site",
+        "a",
+        "b",
+        "noise"
+      ],
+      "language": [
+        "site"
+      ],
+      "training": [
+        {
+          "id": "train-0",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 0,
+            "noise": 1
+          },
+          "outcome": "off"
+        },
+        {
+          "id": "train-1",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 1,
+            "noise": 1
+          },
+          "outcome": "on"
+        },
+        {
+          "id": "train-2",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 0,
+            "noise": 1
+          },
+          "outcome": "on"
+        },
+        {
+          "id": "train-3",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 1,
+            "noise": 1
+          },
+          "outcome": "off"
+        },
+        {
+          "id": "train-4",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 0,
+            "noise": 2
+          },
+          "outcome": "off"
+        },
+        {
+          "id": "train-5",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 1,
+            "noise": 2
+          },
+          "outcome": "on"
+        },
+        {
+          "id": "train-6",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 0,
+            "noise": 2
+          },
+          "outcome": "on"
+        },
+        {
+          "id": "train-7",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 1,
+            "noise": 2
+          },
+          "outcome": "off"
+        },
+        {
+          "id": "train-8",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 0,
+            "noise": 3
+          },
+          "outcome": "off"
+        },
+        {
+          "id": "train-9",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 1,
+            "noise": 3
+          },
+          "outcome": "on"
+        },
+        {
+          "id": "train-10",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 0,
+            "noise": 3
+          },
+          "outcome": "on"
+        },
+        {
+          "id": "train-11",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 1,
+            "noise": 3
+          },
+          "outcome": "off"
+        },
+        {
+          "id": "train-12",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 0,
+            "noise": 4
+          },
+          "outcome": "off"
+        },
+        {
+          "id": "train-13",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 1,
+            "noise": 4
+          },
+          "outcome": "on"
+        },
+        {
+          "id": "train-14",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 0,
+            "noise": 4
+          },
+          "outcome": "on"
+        },
+        {
+          "id": "train-15",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 1,
+            "noise": 4
+          },
+          "outcome": "off"
+        }
+      ],
+      "validation_inputs": [
+        {
+          "id": "val-16",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 0,
+            "noise": 11
+          }
+        },
+        {
+          "id": "val-17",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 1,
+            "noise": 11
+          }
+        },
+        {
+          "id": "val-18",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 0,
+            "noise": 11
+          }
+        },
+        {
+          "id": "val-19",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 1,
+            "noise": 11
+          }
+        },
+        {
+          "id": "val-20",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 0,
+            "noise": 12
+          }
+        },
+        {
+          "id": "val-21",
+          "observables": {
+            "site": "lab",
+            "a": 0,
+            "b": 1,
+            "noise": 12
+          }
+        },
+        {
+          "id": "val-22",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 0,
+            "noise": 12
+          }
+        },
+        {
+          "id": "val-23",
+          "observables": {
+            "site": "lab",
+            "a": 1,
+            "b": 1,
+            "noise": 12
+          }
+        }
+      ],
+      "costs": {
+        "site": 1,
+        "a": 1,
+        "b": 1,
+        "noise": 1
+      }
+    },
+    "input_hash": "2939100b68fffb088c8fdb43ea42c788f5af22f1df68936334431a7014c06b88",
+    "collisions": {
+      "count": 64,
+      "witnesses": [
+        [
+          "train-0",
+          "train-1"
+        ],
+        [
+          "train-0",
+          "train-2"
+        ],
+        [
+          "train-0",
+          "train-5"
+        ],
+        [
+          "train-0",
+          "train-6"
+        ],
+        [
+          "train-0",
+          "train-9"
+        ],
+        [
+          "train-0",
+          "train-10"
+        ],
+        [
+          "train-0",
+          "train-13"
+        ],
+        [
+          "train-0",
+          "train-14"
+        ],
+        [
+          "train-1",
+          "train-3"
+        ],
+        [
+          "train-1",
+          "train-4"
+        ],
+        [
+          "train-1",
+          "train-7"
+        ],
+        [
+          "train-1",
+          "train-8"
+        ],
+        [
+          "train-1",
+          "train-11"
+        ],
+        [
+          "train-1",
+          "train-12"
+        ],
+        [
+          "train-1",
+          "train-15"
+        ],
+        [
+          "train-2",
+          "train-3"
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "id": "candidate-3",
+        "expression": {
+          "op": "eq",
+          "a": "a",
+          "b": "b"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "eq",
+            "a": "a",
+            "b": "b"
+          }
+        ],
+        "cost": 2,
+        "complexity": 2,
+        "training_conflicts": 0,
+        "training_witnesses": [],
+        "repeated_fraction": 1.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-17",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-18",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-19",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-20",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-21",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-22",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-23",
+            "covered": true,
+            "prediction": "off"
+          }
+        ]
+      },
+      {
+        "id": "candidate-4",
+        "expression": {
+          "op": "xor",
+          "a": "a",
+          "b": "b"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "xor",
+            "a": "a",
+            "b": "b"
+          }
+        ],
+        "cost": 2,
+        "complexity": 2,
+        "training_conflicts": 0,
+        "training_witnesses": [],
+        "repeated_fraction": 1.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-17",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-18",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-19",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-20",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-21",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-22",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-23",
+            "covered": true,
+            "prediction": "off"
+          }
+        ]
+      },
+      {
+        "id": "candidate-5",
+        "expression": {
+          "op": "difference",
+          "a": "a",
+          "b": "b"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "difference",
+            "a": "a",
+            "b": "b"
+          }
+        ],
+        "cost": 2,
+        "complexity": 2,
+        "training_conflicts": 0,
+        "training_witnesses": [],
+        "repeated_fraction": 1.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-17",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-18",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-19",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-20",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-21",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-22",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-23",
+            "covered": true,
+            "prediction": "off"
+          }
+        ]
+      },
+      {
+        "id": "candidate-6",
+        "expression": {
+          "op": "sum",
+          "a": "a",
+          "b": "b"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "sum",
+            "a": "a",
+            "b": "b"
+          }
+        ],
+        "cost": 2,
+        "complexity": 2,
+        "training_conflicts": 0,
+        "training_witnesses": [],
+        "repeated_fraction": 1.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-17",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-18",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-19",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-20",
+            "covered": true,
+            "prediction": "off"
+          },
+          {
+            "id": "val-21",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-22",
+            "covered": true,
+            "prediction": "on"
+          },
+          {
+            "id": "val-23",
+            "covered": true,
+            "prediction": "off"
+          }
+        ]
+      },
+      {
+        "id": "candidate-11",
+        "expression": {
+          "op": "difference",
+          "a": "b",
+          "b": "noise"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "difference",
+            "a": "b",
+            "b": "noise"
+          }
+        ],
+        "cost": 2,
+        "complexity": 2,
+        "training_conflicts": 14,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-2"
+          ],
+          [
+            "train-0",
+            "train-5"
+          ],
+          [
+            "train-2",
+            "train-7"
+          ],
+          [
+            "train-5",
+            "train-7"
+          ],
+          [
+            "train-1",
+            "train-3"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-4",
+            "train-9"
+          ],
+          [
+            "train-6",
+            "train-11"
+          ],
+          [
+            "train-9",
+            "train-11"
+          ],
+          [
+            "train-8",
+            "train-10"
+          ],
+          [
+            "train-8",
+            "train-13"
+          ],
+          [
+            "train-10",
+            "train-15"
+          ],
+          [
+            "train-13",
+            "train-15"
+          ],
+          [
+            "train-12",
+            "train-14"
+          ]
+        ],
+        "repeated_fraction": 0.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "id": "candidate-12",
+        "expression": {
+          "op": "sum",
+          "a": "b",
+          "b": "noise"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "sum",
+            "a": "b",
+            "b": "noise"
+          }
+        ],
+        "cost": 2,
+        "complexity": 2,
+        "training_conflicts": 14,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-2"
+          ],
+          [
+            "train-1",
+            "train-3"
+          ],
+          [
+            "train-1",
+            "train-4"
+          ],
+          [
+            "train-3",
+            "train-6"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-5",
+            "train-7"
+          ],
+          [
+            "train-5",
+            "train-8"
+          ],
+          [
+            "train-7",
+            "train-10"
+          ],
+          [
+            "train-8",
+            "train-10"
+          ],
+          [
+            "train-9",
+            "train-11"
+          ],
+          [
+            "train-9",
+            "train-12"
+          ],
+          [
+            "train-11",
+            "train-14"
+          ],
+          [
+            "train-12",
+            "train-14"
+          ],
+          [
+            "train-13",
+            "train-15"
+          ]
+        ],
+        "repeated_fraction": 0.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "id": "candidate-8",
+        "expression": {
+          "op": "difference",
+          "a": "a",
+          "b": "noise"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "difference",
+            "a": "a",
+            "b": "noise"
+          }
+        ],
+        "cost": 2,
+        "complexity": 2,
+        "training_conflicts": 14,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-1"
+          ],
+          [
+            "train-0",
+            "train-6"
+          ],
+          [
+            "train-1",
+            "train-7"
+          ],
+          [
+            "train-6",
+            "train-7"
+          ],
+          [
+            "train-2",
+            "train-3"
+          ],
+          [
+            "train-4",
+            "train-5"
+          ],
+          [
+            "train-4",
+            "train-10"
+          ],
+          [
+            "train-5",
+            "train-11"
+          ],
+          [
+            "train-10",
+            "train-11"
+          ],
+          [
+            "train-8",
+            "train-9"
+          ],
+          [
+            "train-8",
+            "train-14"
+          ],
+          [
+            "train-9",
+            "train-15"
+          ],
+          [
+            "train-14",
+            "train-15"
+          ],
+          [
+            "train-12",
+            "train-13"
+          ]
+        ],
+        "repeated_fraction": 0.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "id": "candidate-9",
+        "expression": {
+          "op": "sum",
+          "a": "a",
+          "b": "noise"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "sum",
+            "a": "a",
+            "b": "noise"
+          }
+        ],
+        "cost": 2,
+        "complexity": 2,
+        "training_conflicts": 14,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-1"
+          ],
+          [
+            "train-2",
+            "train-3"
+          ],
+          [
+            "train-2",
+            "train-4"
+          ],
+          [
+            "train-3",
+            "train-5"
+          ],
+          [
+            "train-4",
+            "train-5"
+          ],
+          [
+            "train-6",
+            "train-7"
+          ],
+          [
+            "train-6",
+            "train-8"
+          ],
+          [
+            "train-7",
+            "train-9"
+          ],
+          [
+            "train-8",
+            "train-9"
+          ],
+          [
+            "train-10",
+            "train-11"
+          ],
+          [
+            "train-10",
+            "train-12"
+          ],
+          [
+            "train-11",
+            "train-13"
+          ],
+          [
+            "train-12",
+            "train-13"
+          ],
+          [
+            "train-14",
+            "train-15"
+          ]
+        ],
+        "repeated_fraction": 0.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "id": "candidate-2",
+        "expression": {
+          "op": "field",
+          "a": "noise"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "field",
+            "a": "noise"
+          }
+        ],
+        "cost": 1,
+        "complexity": 1,
+        "training_conflicts": 16,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-1"
+          ],
+          [
+            "train-0",
+            "train-2"
+          ],
+          [
+            "train-1",
+            "train-3"
+          ],
+          [
+            "train-2",
+            "train-3"
+          ],
+          [
+            "train-4",
+            "train-5"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-5",
+            "train-7"
+          ],
+          [
+            "train-6",
+            "train-7"
+          ],
+          [
+            "train-8",
+            "train-9"
+          ],
+          [
+            "train-8",
+            "train-10"
+          ],
+          [
+            "train-9",
+            "train-11"
+          ],
+          [
+            "train-10",
+            "train-11"
+          ],
+          [
+            "train-12",
+            "train-13"
+          ],
+          [
+            "train-12",
+            "train-14"
+          ],
+          [
+            "train-13",
+            "train-15"
+          ],
+          [
+            "train-14",
+            "train-15"
+          ]
+        ],
+        "repeated_fraction": 0.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "id": "candidate-0",
+        "expression": {
+          "op": "field",
+          "a": "a"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "field",
+            "a": "a"
+          }
+        ],
+        "cost": 1,
+        "complexity": 1,
+        "training_conflicts": 32,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-1"
+          ],
+          [
+            "train-0",
+            "train-5"
+          ],
+          [
+            "train-0",
+            "train-9"
+          ],
+          [
+            "train-0",
+            "train-13"
+          ],
+          [
+            "train-1",
+            "train-4"
+          ],
+          [
+            "train-1",
+            "train-8"
+          ],
+          [
+            "train-1",
+            "train-12"
+          ],
+          [
+            "train-4",
+            "train-5"
+          ],
+          [
+            "train-4",
+            "train-9"
+          ],
+          [
+            "train-4",
+            "train-13"
+          ],
+          [
+            "train-5",
+            "train-8"
+          ],
+          [
+            "train-5",
+            "train-12"
+          ],
+          [
+            "train-8",
+            "train-9"
+          ],
+          [
+            "train-8",
+            "train-13"
+          ],
+          [
+            "train-9",
+            "train-12"
+          ],
+          [
+            "train-12",
+            "train-13"
+          ]
+        ],
+        "repeated_fraction": 0.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "id": "candidate-1",
+        "expression": {
+          "op": "field",
+          "a": "b"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "field",
+            "a": "b"
+          }
+        ],
+        "cost": 1,
+        "complexity": 1,
+        "training_conflicts": 32,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-2"
+          ],
+          [
+            "train-0",
+            "train-6"
+          ],
+          [
+            "train-0",
+            "train-10"
+          ],
+          [
+            "train-0",
+            "train-14"
+          ],
+          [
+            "train-2",
+            "train-4"
+          ],
+          [
+            "train-2",
+            "train-8"
+          ],
+          [
+            "train-2",
+            "train-12"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-4",
+            "train-10"
+          ],
+          [
+            "train-4",
+            "train-14"
+          ],
+          [
+            "train-6",
+            "train-8"
+          ],
+          [
+            "train-6",
+            "train-12"
+          ],
+          [
+            "train-8",
+            "train-10"
+          ],
+          [
+            "train-8",
+            "train-14"
+          ],
+          [
+            "train-10",
+            "train-12"
+          ],
+          [
+            "train-12",
+            "train-14"
+          ]
+        ],
+        "repeated_fraction": 0.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "id": "candidate-10",
+        "expression": {
+          "op": "eq",
+          "a": "b",
+          "b": "noise"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "eq",
+            "a": "b",
+            "b": "noise"
+          }
+        ],
+        "cost": 2,
+        "complexity": 2,
+        "training_conflicts": 50,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-2"
+          ],
+          [
+            "train-0",
+            "train-5"
+          ],
+          [
+            "train-0",
+            "train-6"
+          ],
+          [
+            "train-0",
+            "train-9"
+          ],
+          [
+            "train-0",
+            "train-10"
+          ],
+          [
+            "train-0",
+            "train-13"
+          ],
+          [
+            "train-0",
+            "train-14"
+          ],
+          [
+            "train-2",
+            "train-4"
+          ],
+          [
+            "train-2",
+            "train-7"
+          ],
+          [
+            "train-2",
+            "train-8"
+          ],
+          [
+            "train-2",
+            "train-11"
+          ],
+          [
+            "train-2",
+            "train-12"
+          ],
+          [
+            "train-2",
+            "train-15"
+          ],
+          [
+            "train-4",
+            "train-5"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-4",
+            "train-9"
+          ]
+        ],
+        "repeated_fraction": 0.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "id": "candidate-7",
+        "expression": {
+          "op": "eq",
+          "a": "a",
+          "b": "noise"
+        },
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "eq",
+            "a": "a",
+            "b": "noise"
+          }
+        ],
+        "cost": 2,
+        "complexity": 2,
+        "training_conflicts": 50,
+        "training_witnesses": [
+          [
+            "train-0",
+            "train-1"
+          ],
+          [
+            "train-0",
+            "train-5"
+          ],
+          [
+            "train-0",
+            "train-6"
+          ],
+          [
+            "train-0",
+            "train-9"
+          ],
+          [
+            "train-0",
+            "train-10"
+          ],
+          [
+            "train-0",
+            "train-13"
+          ],
+          [
+            "train-0",
+            "train-14"
+          ],
+          [
+            "train-1",
+            "train-4"
+          ],
+          [
+            "train-1",
+            "train-7"
+          ],
+          [
+            "train-1",
+            "train-8"
+          ],
+          [
+            "train-1",
+            "train-11"
+          ],
+          [
+            "train-1",
+            "train-12"
+          ],
+          [
+            "train-1",
+            "train-15"
+          ],
+          [
+            "train-4",
+            "train-5"
+          ],
+          [
+            "train-4",
+            "train-6"
+          ],
+          [
+            "train-4",
+            "train-9"
+          ]
+        ],
+        "repeated_fraction": 0.0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      }
+    ],
+    "selected_id": "candidate-3",
+    "baselines": [
+      {
+        "name": "current_language",
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          }
+        ],
+        "training_conflicts": 64,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "name": "single_field:a",
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "field",
+            "a": "a"
+          }
+        ],
+        "training_conflicts": 32,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "name": "single_field:b",
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "field",
+            "a": "b"
+          }
+        ],
+        "training_conflicts": 32,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "name": "single_field:noise",
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "field",
+            "a": "noise"
+          }
+        ],
+        "training_conflicts": 16,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      },
+      {
+        "name": "all_fields",
+        "model": [
+          {
+            "op": "field",
+            "a": "site"
+          },
+          {
+            "op": "field",
+            "a": "a"
+          },
+          {
+            "op": "field",
+            "a": "b"
+          },
+          {
+            "op": "field",
+            "a": "noise"
+          }
+        ],
+        "training_conflicts": 0,
+        "predictions": [
+          {
+            "id": "val-16",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-17",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-18",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-19",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-20",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-21",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-22",
+            "covered": false,
+            "prediction": null
+          },
+          {
+            "id": "val-23",
+            "covered": false,
+            "prediction": null
+          }
+        ]
+      }
+    ],
+    "evaluation": null,
+    "admission": "PROPOSED",
+    "freeze_hash": "a946c3b08d08bf2d79579d872e41b7d69c439b9cc34ba4abe07bb8a0500ed09c",
+    "related_refuters": []
+  },
+  "certificate": {
+    "witness_ids": [
+      "train-0",
+      "train-1"
+    ],
+    "encoding": {
+      "representation": "[\"lab\"]",
+      "outcome_zero": "off",
+      "outcome_one": "on"
+    },
+    "theorem": "obstruction",
+    "source": "-- Generated finite collision certificate; encoding must be verified against the data.\ntheorem obstruction : ¬ ∃ f : Nat → Nat, f 0 = 0 ∧ f 0 = 1 := by\n  intro ⟨f, ha, hb⟩\n  have impossible : (0 : Nat) = 1 := ha.symm.trans hb\n  cases impossible\n#print axioms obstruction\n",
+    "source_hash": "e38e9181194c13fc340ea8ab5f562fdaf8b408e87015304a8aab1d2e306c6747",
+    "status": "SOURCE_ONLY_UNCHECKED"
+  }
+}

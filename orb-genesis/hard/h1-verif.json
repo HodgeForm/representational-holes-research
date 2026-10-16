@@ -1,0 +1,13 @@
+{
+  "schema": "orb-genesis-verification/1",
+  "bundle_hash": "880ce3c951097a026dc7d75024966a381f81f416fae60582facf229934b606f1",
+  "verifier_version": "0.3.0",
+  "python_recomputation": "PASSED",
+  "lean_status": "KERNEL_CHECKED",
+  "scope": "Exact finite collision obstruction only. Does not prove measurement validity, useful representation, causality, novelty, or a general discovery ability.",
+  "lean_version": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)",
+  "compiler_sha256": "92c3d35b5bfaa5e0fea413a775d504cf46cd95e1345df61c2274f76779e7e023",
+  "source_hash": "e38e9181194c13fc340ea8ab5f562fdaf8b408e87015304a8aab1d2e306c6747",
+  "axioms": [],
+  "output": "'obstruction' does not depend on any axioms"
+}

@@ -1,20 +1,18 @@
-# Reproduce v0.1.0-rc1 from zero
+# Reproduce from main
 
-This release candidate is designed so an independent reviewer can reproduce the flagship computational endpoint without HodgeForm or Orbita.
+An independent reviewer can reproduce the flagship computational endpoint from the public `main` branch without HodgeForm or Orbita.
 
-## 1. Clone the release-candidate branch
+## 1. Clone main
 
 ```bash
 git clone https://github.com/ImDerekEarnhart/representational-holes-research.git
 cd representational-holes-research
-git checkout release/representational-holes-v0.1.0-rc1
+git checkout main
 ```
-
-The repository is currently private, so this command works only for authorized reviewers until public release.
 
 ## 2. Reproduce Experiment 012 / 012C
 
-Python 3.12 is the CI reference runtime.
+Python 3.12 is the CI reference runtime. The two-minute check is:
 
 ```bash
 python -m venv .venv
@@ -30,13 +28,16 @@ PASS: Experiment 012 and 012C reproduce the frozen result artifacts.
 ```
 
 The verifier:
+
 - checks the frozen plan/result SHA-256 values;
 - reconstructs all five prospective evaluations;
 - compares every per-rule mismatch count to the frozen primary result;
 - checks the 012C 0-versus-217 endpoint;
 - stress-checks the Rule 3 / Rule 17 shift identity over multiple horizons.
 
-## 3. Reconstruct and build the exact Lean artifact
+## 3. Reconstruct and build the Lean artifact
+
+The archive is a formalization of general representation theorems plus a two-bit parity toy. Building it does not formalize Rules 3 and 17 or the Experiment 012 grammar.
 
 ```bash
 base64 -d artifacts/orbita_language_limit_lean_v0_1.zip.b64 > /tmp/orbita_language_limit_lean_v0_1.zip
@@ -63,6 +64,6 @@ and Mathlib:
 
 ## 4. Interpretation boundary
 
-A successful replay establishes that the supplied frozen artifacts are internally reproducible under the declared implementation and that the Lean source compiles if the formal CI passes.
+A successful replay establishes that the supplied frozen artifacts are reproducible under the declared implementation and that the Lean source compiles if the formal CI passes.
 
 It does not by itself establish scientific novelty, historical priority, external third-party replication, or generalization beyond the bounded ECA setting.
