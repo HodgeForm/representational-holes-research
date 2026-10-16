@@ -1,0 +1,8 @@
+/workspace/erdos-check/ax/block_02.lean:23:28: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+/workspace/erdos-check/ax/block_02.lean:23:15: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/workspace/erdos-check/ax/block_02.lean:23:28: warning: 'positivity' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+'erdos_242_mod4_eq3' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0
