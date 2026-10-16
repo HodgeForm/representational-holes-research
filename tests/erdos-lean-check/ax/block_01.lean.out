@@ -1,0 +1,7 @@
+/workspace/erdos-check/ax/block_01.lean:11:2: error: unsolved goals
+case refine_2
+k : ℕ
+⊢ 4 * ((↑k + 2) * (↑k + 3)) = (↑k + 3 + (↑k + 2) + 1) * (2 * (↑k + 2))
+/workspace/erdos-check/ax/block_01.lean:12:16: error: unexpected identifier; expected command
+'erdos_242_even' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+exit 1
