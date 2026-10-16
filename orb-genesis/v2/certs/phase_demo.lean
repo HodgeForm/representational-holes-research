@@ -21,7 +21,7 @@ def predict (train : List Row) (m : List E) (r : Row) : Option String :=
   | [] => none
   | h :: rest => if rest.all (fun t => decide (t.out = h.out)) then some h.out else none
 
-def studyHash : String := "691b4227c398bf5e8ac580190251b40d3dd129425d8acc32479d45d2798bb1fd"
+def studyHash : String := "f114afe7e712b051cac34b53d7500a6c643ea3c273656a1befb1868ff5fbea74"
 def claimedStatus : String := "HELDOUT_SUPPORTED"
 def train : List Row := [
   { id := "train-0", obs := [("color", V.s "dark"), ("phase", V.s "in"), ("shape", V.s "round"), ("temperature", V.i (10))], out := "stable" },

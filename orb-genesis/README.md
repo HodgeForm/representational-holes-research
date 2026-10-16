@@ -42,7 +42,7 @@ Run that from this directory. The script asks `elan which lean` while standing h
 - `phase_demo`, `H1`, `H2`, `H3`: `STUDY_KERNEL_CHECKED`, and the printed axiom lines say the theorems do not depend on any axioms;
 - `H2_forged_status`, `H1_forged_rule`: `LEAN_FAILED`.
 
-`result.json` is a committed replay of the phase fixture so the certificate script has a phase bundle. `v2/run_certs.py` rewrites `v2/certs/` from the committed bundles. A second run on the same files is stable.
+`result.json` is a committed replay of the phase fixture so the certificate script has a phase bundle. `v2/certs/phase_demo.lean` matches that file (study hash `f114afe7e712b051cac34b53d7500a6c643ea3c273656a1befb1868ff5fbea74`). The slideshow embeds an earlier session of the same fixture, so its displayed hash differs. `v2/run_certs.py` rewrites `v2/certs/` from the committed bundles. A second run on the same files is stable. Temporary Lean paths in the receipt are written as `Study.lean`.
 
 ## Run the companion on the phase fixture
 

@@ -8,6 +8,7 @@ Paths are resolved from this file's location.
 """
 import json
 import pathlib
+import re
 import subprocess
 import sys
 
@@ -31,6 +32,11 @@ def lean_exe():
     return lean
 
 
+def stable_output(text):
+    """Drop the temporary directory so a repeat run writes the same receipt."""
+    return re.sub(r"/tmp/[^/\s:]+/Study\.lean", "Study.lean", text)
+
+
 def main():
     lean = lean_exe()
     hard = ROOT / "hard"
@@ -49,17 +55,23 @@ def main():
         bundle = json.loads(path.read_text())
         src, study_hash, _ = lc.generate(bundle)
         (certs / f"{name}.lean").write_text(src)
-        res[name] = {"study_hash": study_hash, **lc.check(src, lean)}
+        row = lc.check(src, lean)
+        row["output"] = stable_output(row["output"])
+        res[name] = {"study_hash": study_hash, **row}
 
     forged_status = json.loads((hard / "h2-result.json").read_text())
     src, study_hash, _ = lc.generate(forged_status, status_override="HELDOUT_SUPPORTED")
     (certs / "H2_forged_status.lean").write_text(src)
-    res["H2_forged_status"] = {"study_hash": study_hash, **lc.check(src, lean)}
+    row = lc.check(src, lean)
+    row["output"] = stable_output(row["output"])
+    res["H2_forged_status"] = {"study_hash": study_hash, **row}
 
     forged_rule = json.loads((hard / "h1-result.json").read_text())
     src, study_hash, _ = lc.generate(forged_rule, rule_override=[{"op": "field", "a": "site"}, {"op": "field", "a": "a"}])
     (certs / "H1_forged_rule.lean").write_text(src)
-    res["H1_forged_rule"] = {"study_hash": study_hash, **lc.check(src, lean)}
+    row = lc.check(src, lean)
+    row["output"] = stable_output(row["output"])
+    res["H1_forged_rule"] = {"study_hash": study_hash, **row}
 
     (certs / "results.json").write_text(json.dumps(res, indent=1) + "\n")
     for name, row in res.items():

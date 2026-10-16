@@ -1,8 +1,8 @@
 {
  "phase_demo": {
-  "study_hash": "691b4227c398bf5e8ac580190251b40d3dd129425d8acc32479d45d2798bb1fd",
+  "study_hash": "f114afe7e712b051cac34b53d7500a6c643ea3c273656a1befb1868ff5fbea74",
   "lean_status": "STUDY_KERNEL_CHECKED",
-  "source_sha256": "27de89d6a055af0d05acbd340fcb2087b3a6f249bf949dc81c470e323da2e456",
+  "source_sha256": "abfebb3d660213692343f2528be2da77e4fbff0bd6586349ecf417eb3b353dfe",
   "axioms_output": [
    "'obstruction' does not depend on any axioms",
    "'heldout_supported' does not depend on any axioms"
@@ -52,7 +52,7 @@
    "'heldout_supported' depends on axioms: [sorryAx]"
   ],
   "native_decide_used": false,
-  "output": "/tmp/tmpd2xcs9hr/Study.lean:63:103: error: tactic 'decide' proved that the proposition\n  (val.all fun r => decide (predict train rule r = some r.out)) = true\nis false\n'obstruction' does not depend on any axioms\n'heldout_supported' depends on axioms: [sorryAx]"
+  "output": "Study.lean:63:103: error: tactic 'decide' proved that the proposition\n  (val.all fun r => decide (predict train rule r = some r.out)) = true\nis false\n'obstruction' does not depend on any axioms\n'heldout_supported' depends on axioms: [sorryAx]"
  },
  "H1_forged_rule": {
   "study_hash": "880ce3c951097a026dc7d75024966a381f81f416fae60582facf229934b606f1",
@@ -63,6 +63,6 @@
    "'heldout_supported' depends on axioms: [sorryAx]"
   ],
   "native_decide_used": false,
-  "output": "/tmp/tmpn_exxbki/Study.lean:63:103: error: tactic 'decide' proved that the proposition\n  (val.all fun r => decide (predict train rule r = some r.out)) = true\nis false\n'obstruction' does not depend on any axioms\n'heldout_supported' depends on axioms: [sorryAx]"
+  "output": "Study.lean:63:103: error: tactic 'decide' proved that the proposition\n  (val.all fun r => decide (predict train rule r = some r.out)) = true\nis false\n'obstruction' does not depend on any axioms\n'heldout_supported' depends on axioms: [sorryAx]"
  }
 }
