@@ -1,45 +1,19 @@
-# Evidence inventory — verification in progress
+# Evidence inventory
 
-## Flagship Rule 3 / Rule 17 evidence
+What a reader can check from this repository. Staging checklists that named uploads not included here are in `research/archive/EVIDENCE_INVENTORY_staging.md`.
 
-- [x] Experiment 012 frozen plan recovered and hash-checked.
-- [x] Experiment 012C frozen plan recovered and hash-checked.
-- [x] Experiment 012 primary and complete result files recovered; standalone copies are byte-identical to the audit ZIP copies.
-- [x] Supplied Experiment 012 replay script rerun successfully.
-- [x] Separate reimplementation reproduced all five prospective survivor sets and every mismatch count.
-- [x] Rule 3 / Rule 17 parity repair reproduced: Rule 3 = 0/256 mismatches; Rule 17 = 217/256 mismatches.
-- [x] Frozen DSL reconciled: 8 horizons × 254 nonconstant masks = **2,032 programs** for Experiment 012.
-- [x] Translation-invariance certificate checked against the supplied ECA convention and numerically stress-checked across multiple horizons.
-- [x] Independent audit enumeration found 0 resolving programs among all 2,032 frozen-DSL programs on a separate audit sample.
-- [x] `LanguageLimitBench_v0.1.1_PUBLIC` recovered; manifest verifier reports 20 files verified and all 5 unit tests pass.
-- [x] Lean source package recovered; all 8 manifest-listed project files match declared byte counts and SHA-256 hashes.
-- [ ] Lean project compiled under pinned Lean 4 / Mathlib v4.32.1 with machine-check receipt.
-- [ ] Third-party / separately hosted reproduction from the final public release.
-- [ ] Original `From_Search_Failure_to_Language_Limit.tex` located, or publication source regenerated from the verified preprint.
-- [ ] `Executable_Questions_Open_Source_Kit_v0.3.0.zip` located as a standalone release artifact, or reconstructed from the verified component artifacts.
+## Flagship Rule 3 / Rule 17 evidence in this tree
 
-See `research/EXP012_REPLICATION_AUDIT_2026-10-12.md`.
+- [x] Experiment 012 frozen plan, primary results, complete results, and Experiment 012C plan are in `experiments/exp012/`. SHA-256 values are in `MANIFEST_SHA256.md`.
+- [x] `experiments/exp012/verify_exp012.py` recomputes the five prospective survivor sets, every recorded mismatch count, the 012C endpoint (0/256 and 217/256), and the Rule 3 / Rule 17 shift identity.
+- [x] Frozen DSL size is 8 horizons × 254 nonconstant masks = **2,032 programs**. The 16-versus-2,032 wording is resolved in `research/CLAIM_AUDIT.md`.
+- [x] The language-limit statement is the shift identity plus translation invariance of the frozen aggregate DSL, recorded in the result JSON and checked numerically by the verifier.
+- [x] The Lean archive in `artifacts/` matches the SHA-256 in `MANIFEST_SHA256.md`. `formal/LEAN_CI_RECEIPT.md` records a successful compile under Lean 4.32.1 / Mathlib v4.32.1. That project is general theorems plus a two-bit parity toy. It is not a formalization of Rules 3 and 17.
 
-## Secondary representation-repair evidence received
+## Still open, and not claimed
 
-- [x] `Representation_Repair_Computing_v0.1.0(3).zip`
-  - SHA-256 manifest verified: 13/13 packaged files matched.
-  - Reproduction rerun completed in a separate Python runtime.
-  - Mathematical/result fields matched archived results; only the Python runtime string differed.
-- [x] `Representation_Repair_Ablation_v1_FULL(1).zip`
-  - Frozen four-arm ARC-AGI-3 protocol and local validation records inspected.
-  - No live ARC-AGI-3 scout/confirmation result is claimed by the package.
-- [x] `Representation Limits, Consciousness, and Experimental Roadmap`
-  - Background framework/roadmap; not flagship evidence.
-- [x] `From Representational Holes to Governed Cognitive Repair`
-  - Background manuscript and Opaque Fiber benchmark record; not flagship Rule 3/17 evidence.
+- [ ] A third party reproducing the public tree and reporting the result independently.
 
-## Excluded as unrelated to this release
+## Companion, separate from the flagship
 
-- `deep-research-report.md` — Kolyvagin/Stark-regulator mathematics research; keep out of this repository's public launch narrative.
-
-## Current wording boundary
-
-It is now accurate to say the Experiment 012/012C computational endpoints were **reproduced in a separate audit implementation**.
-
-It is not yet accurate to say the result has received **external third-party replication** or that the supplied Lean project has been independently compiled.
+`orb-genesis/` is a synthetic finite-data discovery loop with weak lookup-table baselines and per-study Lean certificates about those exact rows. It is not evidence for the Rule 3 / Rule 17 claim. See `orb-genesis/README.md`.

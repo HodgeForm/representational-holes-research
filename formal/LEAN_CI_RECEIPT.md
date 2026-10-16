@@ -35,4 +35,4 @@ GitHub Actions artifact:
 - artifact ID: `11814216649`
 - artifact ZIP digest: `sha256:b39dad26be8002c48572667224505c4fc5084741139a19b6c977c2cdc569af63`
 
-This receipt establishes successful compilation of the supplied abstract Lean formalization under its pinned toolchain. It does not by itself establish novelty or validate any external application of the abstract theorems.
+This receipt establishes successful compilation of the supplied abstract Lean formalization under its pinned toolchain. The sources prove general theorems about an arbitrary representation map, plus a two-bit parity toy. They are not a formalization of Rules 3 and 17 or of the Experiment 012 grammar. The receipt does not by itself establish novelty or validate any external application of the abstract theorems.

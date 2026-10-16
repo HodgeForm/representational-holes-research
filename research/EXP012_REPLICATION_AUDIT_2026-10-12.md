@@ -10,8 +10,8 @@ This is a computational replication of the supplied frozen artifacts, **not** a 
 
 ## Artifact fingerprints
 
-- `Experiment_012_Autonomous_Question_Program_Synthesis_Audit(2).zip`
-  - SHA-256: `2c02c4510a61f422062a32e8e2695a6cb75bd35c932080e93f8bf0ab6426f1f2`
+The frozen public files are in `experiments/exp012/`:
+
 - `exp012_frozen_plan.json`
   - SHA-256: `05d6847671e8abb09e204ba65b71089b5a08be66e7171b6ab97465fc320df24d`
 - `exp012_primary_results.json`
@@ -21,7 +21,7 @@ This is a computational replication of the supplied frozen artifacts, **not** a 
 - `exp012_complete_results.json`
   - SHA-256: `8696747031786ac2cad5783f300a93a22f46c64ab8c25533efffd7b0b372e874`
 
-The four separately uploaded JSON files were byte-identical to the copies inside the Experiment 012 audit ZIP. The hash references embedded in the complete-results file matched the actual plan/result files.
+The hash references embedded in the complete-results file match the plan and primary-result files in this tree. `verify_exp012.py` checks three of those hashes on every run. A staging comparison against an upload archive that is not in this repository is preserved in `research/archive/EXP012_REPLICATION_AUDIT_2026-10-12_staging.md`.
 
 ## Frozen DSL
 
@@ -35,7 +35,7 @@ The plan defines exactly:
 
 Therefore the primary search language contains exactly **8 × 254 = 2,032 programs**.
 
-Earlier project notes that mention a 16-program language should not be presented as the Experiment 012 denominator unless a distinct earlier experiment is explicitly identified. For the supplied Exp012 package, 2,032 is the correct frozen DSL size.
+The integer 16 in `allowed_horizons` is one horizon length, not a program count. Elementary Rule 16 is one T05 survivor world (235 prospective mismatches under the selected program). No frozen artifact here defines a 16-program Experiment 012 grammar. Early notes that used "16 programs" for a baseline are recorded in `research/CLAIM_AUDIT.md` and `research/archive/`. The public denominator is 2,032.
 
 ## Supplied reproduction script
 
@@ -108,9 +108,9 @@ What it does **not** establish:
 - minimality of index parity among all conceivable extensions;
 - independent historical priority or peer review.
 
-## Remaining gates
+## Status after the public tree
 
-1. Put the complete raw result JSONs and original audit archive into the repository/release, not only the plans and replay script.
-2. Compile/check the supplied Lean artifact under its pinned Lean/Mathlib toolchain.
-3. Run a third-party or separately hosted reproduction from the public release.
-4. Finalize author identity, citation metadata, licensing, and IP/public-disclosure review.
+1. The frozen plan and result JSON files are in `experiments/exp012/`, and `verify_exp012.py` replays them.
+2. The supplied Lean artifact compiled under Lean 4.32.1 / Mathlib v4.32.1. The receipt is `formal/LEAN_CI_RECEIPT.md`. That development is general theorems plus a two-bit parity toy. It does not formalize Rules 3 and 17.
+3. Author, citation metadata, and the MIT / CC-BY-4.0 split are in the repository root.
+4. A third-party reproduction from this public tree is invited and is not claimed as done.

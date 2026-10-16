@@ -19,3 +19,5 @@ lake build
 ```
 
 The archive pins Lean and Mathlib to v4.32.1. CI performs the same reconstruction and build.
+
+The project proves general representation theorems and a two-bit parity toy. It does not formalize the Rule 3 / Rule 17 cellular-automaton argument.

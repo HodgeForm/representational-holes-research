@@ -1,0 +1,68 @@
+{
+ "phase_demo": {
+  "study_hash": "f114afe7e712b051cac34b53d7500a6c643ea3c273656a1befb1868ff5fbea74",
+  "lean_status": "STUDY_KERNEL_CHECKED",
+  "source_sha256": "abfebb3d660213692343f2528be2da77e4fbff0bd6586349ecf417eb3b353dfe",
+  "axioms_output": [
+   "'obstruction' does not depend on any axioms",
+   "'heldout_supported' does not depend on any axioms"
+  ],
+  "native_decide_used": false,
+  "output": "'obstruction' does not depend on any axioms\n'heldout_supported' does not depend on any axioms"
+ },
+ "H1": {
+  "study_hash": "880ce3c951097a026dc7d75024966a381f81f416fae60582facf229934b606f1",
+  "lean_status": "STUDY_KERNEL_CHECKED",
+  "source_sha256": "57ac8ce47b1e35b8ef25f75c3dbb555357db877d6715c92f541d1a1da4ce3e8b",
+  "axioms_output": [
+   "'obstruction' does not depend on any axioms",
+   "'heldout_supported' does not depend on any axioms"
+  ],
+  "native_decide_used": false,
+  "output": "'obstruction' does not depend on any axioms\n'heldout_supported' does not depend on any axioms"
+ },
+ "H2": {
+  "study_hash": "6eb2fd2e88f3aaea069332e484e791d3335a0ddae263d4f8e3af95a4f7bbaea0",
+  "lean_status": "STUDY_KERNEL_CHECKED",
+  "source_sha256": "a94657cf221fb0761dd214a81aaad2b9bd5b1f44858530b7e880cdb93d322868",
+  "axioms_output": [
+   "'obstruction' does not depend on any axioms",
+   "'refuted' does not depend on any axioms"
+  ],
+  "native_decide_used": false,
+  "output": "'obstruction' does not depend on any axioms\n'refuted' does not depend on any axioms"
+ },
+ "H3": {
+  "study_hash": "818ce477a6a038359c394cb84bfeb75f5bbd057370651fcad262fab06cdbe9a2",
+  "lean_status": "STUDY_KERNEL_CHECKED",
+  "source_sha256": "497462df1abd2afdd6336ab52951c7ebfa84497b0addef97136113d718db6d3d",
+  "axioms_output": [
+   "'obstruction' does not depend on any axioms",
+   "'refuted' does not depend on any axioms"
+  ],
+  "native_decide_used": false,
+  "output": "'obstruction' does not depend on any axioms\n'refuted' does not depend on any axioms"
+ },
+ "H2_forged_status": {
+  "study_hash": "6eb2fd2e88f3aaea069332e484e791d3335a0ddae263d4f8e3af95a4f7bbaea0",
+  "lean_status": "LEAN_FAILED",
+  "source_sha256": "eecf1a656c00b9d1aa235f45c408010173b6d048e5d043d1f8da9a6843ed3587",
+  "axioms_output": [
+   "'obstruction' does not depend on any axioms",
+   "'heldout_supported' depends on axioms: [sorryAx]"
+  ],
+  "native_decide_used": false,
+  "output": "Study.lean:63:103: error: tactic 'decide' proved that the proposition\n  (val.all fun r => decide (predict train rule r = some r.out)) = true\nis false\n'obstruction' does not depend on any axioms\n'heldout_supported' depends on axioms: [sorryAx]"
+ },
+ "H1_forged_rule": {
+  "study_hash": "880ce3c951097a026dc7d75024966a381f81f416fae60582facf229934b606f1",
+  "lean_status": "LEAN_FAILED",
+  "source_sha256": "4c0672564edb1982029927d5508a7c12edc0cbe82d526dce63ba0decf89b7142",
+  "axioms_output": [
+   "'obstruction' does not depend on any axioms",
+   "'heldout_supported' depends on axioms: [sorryAx]"
+  ],
+  "native_decide_used": false,
+  "output": "Study.lean:63:103: error: tactic 'decide' proved that the proposition\n  (val.all fun r => decide (predict train rule r = some r.out)) = true\nis false\n'obstruction' does not depend on any axioms\n'heldout_supported' depends on axioms: [sorryAx]"
+ }
+}

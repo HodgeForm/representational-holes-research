@@ -1,0 +1,175 @@
+{
+  "title": "Synthetic missing-phase control",
+  "source": "synthetic-phase-v1; no physical measurement",
+  "fields": [
+    "shape",
+    "phase",
+    "color",
+    "temperature"
+  ],
+  "language": [
+    "shape"
+  ],
+  "costs": {
+    "shape": 1,
+    "phase": 1,
+    "color": 1,
+    "temperature": 1
+  },
+  "training": [
+    {
+      "id": "train-0",
+      "observables": {
+        "shape": "round",
+        "phase": "in",
+        "color": "dark",
+        "temperature": 10
+      },
+      "outcome": "stable"
+    },
+    {
+      "id": "train-1",
+      "observables": {
+        "shape": "round",
+        "phase": "in",
+        "color": "dark",
+        "temperature": 20
+      },
+      "outcome": "stable"
+    },
+    {
+      "id": "train-2",
+      "observables": {
+        "shape": "round",
+        "phase": "out",
+        "color": "dark",
+        "temperature": 10
+      },
+      "outcome": "unstable"
+    },
+    {
+      "id": "train-3",
+      "observables": {
+        "shape": "round",
+        "phase": "out",
+        "color": "dark",
+        "temperature": 20
+      },
+      "outcome": "unstable"
+    },
+    {
+      "id": "train-4",
+      "observables": {
+        "shape": "square",
+        "phase": "in",
+        "color": "light",
+        "temperature": 10
+      },
+      "outcome": "stable"
+    },
+    {
+      "id": "train-5",
+      "observables": {
+        "shape": "square",
+        "phase": "in",
+        "color": "light",
+        "temperature": 20
+      },
+      "outcome": "stable"
+    },
+    {
+      "id": "train-6",
+      "observables": {
+        "shape": "square",
+        "phase": "out",
+        "color": "light",
+        "temperature": 10
+      },
+      "outcome": "unstable"
+    },
+    {
+      "id": "train-7",
+      "observables": {
+        "shape": "square",
+        "phase": "out",
+        "color": "light",
+        "temperature": 20
+      },
+      "outcome": "unstable"
+    }
+  ],
+  "validation_inputs": [
+    {
+      "id": "test-8",
+      "observables": {
+        "shape": "round",
+        "phase": "in",
+        "color": "dark",
+        "temperature": 30
+      }
+    },
+    {
+      "id": "test-9",
+      "observables": {
+        "shape": "round",
+        "phase": "in",
+        "color": "dark",
+        "temperature": 40
+      }
+    },
+    {
+      "id": "test-10",
+      "observables": {
+        "shape": "round",
+        "phase": "out",
+        "color": "dark",
+        "temperature": 30
+      }
+    },
+    {
+      "id": "test-11",
+      "observables": {
+        "shape": "round",
+        "phase": "out",
+        "color": "dark",
+        "temperature": 40
+      }
+    },
+    {
+      "id": "test-12",
+      "observables": {
+        "shape": "square",
+        "phase": "in",
+        "color": "light",
+        "temperature": 30
+      }
+    },
+    {
+      "id": "test-13",
+      "observables": {
+        "shape": "square",
+        "phase": "in",
+        "color": "light",
+        "temperature": 40
+      }
+    },
+    {
+      "id": "test-14",
+      "observables": {
+        "shape": "square",
+        "phase": "out",
+        "color": "light",
+        "temperature": 30
+      }
+    },
+    {
+      "id": "test-15",
+      "observables": {
+        "shape": "square",
+        "phase": "out",
+        "color": "light",
+        "temperature": 40
+      }
+    }
+  ]
+}

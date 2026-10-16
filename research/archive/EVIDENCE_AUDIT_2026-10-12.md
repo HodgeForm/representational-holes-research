@@ -1,3 +1,5 @@
+> **Archived staging note.** This memo is historical. It names uploads that are not in this repository. The public claim is `research/CLAIM_AUDIT.md` and the frozen files under `experiments/exp012/`. Instructions below to keep the repository private, or to treat the flagship result as unverified, are obsolete where they conflict with those public artifacts. See `research/archive/README.md`.
+
 # Evidence audit — 2026-10-12
 
 ## Executive verdict
