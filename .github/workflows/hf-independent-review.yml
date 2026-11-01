@@ -1,0 +1,38 @@
+name: HF-004 / HF-005 evidence replay (not certification)
+on:
+  pull_request:
+    paths:
+      - 'experiments/hf-independent-review/**'
+      - '.github/workflows/hf-independent-review.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+          cache-dependency-path: 'experiments/hf-independent-review/requirements.txt'
+      - run: python -m pip install -r experiments/hf-independent-review/requirements.txt
+      - name: Check preserved frozen artifact hashes and results
+        run: python experiments/hf-independent-review/check_evidence.py
+      - name: Re-evaluate HF-004 without changing frozen predictions
+        working-directory: experiments/hf-independent-review/hf-004-compound
+        run: |
+          python run.py evaluate
+          python independent_verify.py
+          python test_joint.py
+      - name: Re-evaluate HF-005 without changing frozen predictions
+        working-directory: experiments/hf-independent-review/hf-005-validation
+        run: |
+          python run.py evaluate
+          python audit_independent.py
+          python strong_baseline.py
+          python negative_controls.py
+      - name: Confirm original frozen artifacts not modified by replay
+        run: python experiments/hf-independent-review/check_evidence.py

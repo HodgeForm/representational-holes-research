@@ -1,0 +1,106 @@
+{
+  "files": {
+    "hf-004-compound/README.md": {
+      "bytes": 970,
+      "sha256": "692ca3d4189adfb548a0088b919fc2c2157a0e6850ce2be74ec74b9f35c3e441"
+    },
+    "hf-004-compound/REPORT.md": {
+      "bytes": 6187,
+      "sha256": "eabcb2590ec8e2056bea564469ffd552e0b8a22fd573856b381a33f5bd1e3571"
+    },
+    "hf-004-compound/frozen_predictions.json": {
+      "bytes": 16127,
+      "sha256": "2a2a7c8a4cd0d7a8d381af3f19e4a09906a60606169f23a0c22dd0d80ab33924"
+    },
+    "hf-004-compound/frozen_protocol.json": {
+      "bytes": 1868,
+      "sha256": "5e81be72911efe36cd99c33ae6cb7841388aeda429460af710fed05ae53a9984"
+    },
+    "hf-004-compound/holdout_results.json": {
+      "bytes": 1636,
+      "sha256": "e59882ef47773858cec18d9faab5b383c02d0c0fbacb5f0da64f257ea77e27ea"
+    },
+    "hf-004-compound/independent_verification.json": {
+      "bytes": 535,
+      "sha256": "0dc2ed8343ff4f73014b65e6f1486900eff403b216685f233691d29a7a232058"
+    },
+    "hf-004-compound/independent_verify.py": {
+      "bytes": 2108,
+      "sha256": "6e7304add2823f4a01ddbd14efec49df30d82c58330192eda29ba263f3f5caff"
+    },
+    "hf-004-compound/remote_holdout_probe_24.json": {
+      "bytes": 4507,
+      "sha256": "b9acdb26088b4da1b5a57ed46c2613f6ceb97487d9ea8809d5e003c7b533ed7a"
+    },
+    "hf-004-compound/remote_training_probe_24.json": {
+      "bytes": 4506,
+      "sha256": "63cdf6ac88e7fd1d862d4638351a016ef7e9abef0411d45b44b4b79327ba29ba"
+    },
+    "hf-004-compound/run.py": {
+      "bytes": 9791,
+      "sha256": "6e3363ff5eb5e56b38c25ae5f8307cf5100200b59d7356305914d8f7727057e9"
+    },
+    "hf-004-compound/test_joint.py": {
+      "bytes": 1519,
+      "sha256": "f303f02e41e4d3f8085e57e1c3acd623cd3c3f5f1d90aea75af2ad03871d195e"
+    },
+    "hf-004-compound/training_diagnostics.json": {
+      "bytes": 1091,
+      "sha256": "b92dd30c8dc87b8277ff572fbaa4dc49605dc8546d0f797bdc530a402ec47cea"
+    },
+    "hf-004-compound/unit_test_results.json": {
+      "bytes": 1051,
+      "sha256": "5fa544b504ff820ade56e30418523839b1d52f339ab51361fe97245694c9f32b"
+    },
+    "hf-005-validation/MANIFEST.json": {
+      "bytes": 1151,
+      "sha256": "04c7d93ec7a223c3b60777d66de84d2d25eb649e8f3ce89060ffd18652bc89ef"
+    },
+    "hf-005-validation/REPORT.md": {
+      "bytes": 6854,
+      "sha256": "641950061e2550acb56b232f4349c3b42af820c49319f970c112ff915c89f99a"
+    },
+    "hf-005-validation/audit_independent.py": {
+      "bytes": 4353,
+      "sha256": "26388b95646762c1e9334567566e9dcd8607ba7b97c48d2161846769cc2990e4"
+    },
+    "hf-005-validation/evaluation_console.txt": {
+      "bytes": 6998,
+      "sha256": "115d18f26dd9bd46d5d99cc8a90dec54adbda71209e97d885f94e392dfef10c8"
+    },
+    "hf-005-validation/holdout_scoring.json": {
+      "bytes": 6998,
+      "sha256": "358e71b09bf19e54af5d82ec566373148ed346d02e6becd4367785d8c8d5fca3"
+    },
+    "hf-005-validation/independent_audit.json": {
+      "bytes": 3388,
+      "sha256": "dd9d449b2d0d72fb48aa2fccfdf07cae1ae0fb3af18c7dc955ea180e3169e255"
+    },
+    "hf-005-validation/negative_control_exploratory.json": {
+      "bytes": 1152,
+      "sha256": "b7e35a63e03fa3eabb9ad2155a739562cb176f3724fc629380f3198e5e5023f2"
+    },
+    "hf-005-validation/negative_controls.py": {
+      "bytes": 1155,
+      "sha256": "6760797a0328872fabaf01d15f166ae8ea5a37465d2b6c6f80898951b478f2f3"
+    },
+    "hf-005-validation/precommit.json": {
+      "bytes": 89553,
+      "sha256": "8ff86b010834a668fcd7975cf913fd98cad53f3ba7e71616e30b386fe52c2231"
+    },
+    "hf-005-validation/run.py": {
+      "bytes": 9443,
+      "sha256": "09cee4bd72837ea54a85a3756e94908953356d79bc15784a3c6db01bdba71e1e"
+    },
+    "hf-005-validation/strong_baseline.py": {
+      "bytes": 1843,
+      "sha256": "6de0cf76d06e0fc7828f3294dc8ead6b5cf8cd162ac477525e243632c855faa5"
+    },
+    "hf-005-validation/strong_baseline_exploratory.json": {
+      "bytes": 1116,
+      "sha256": "7bbdc892330880648c7a614fd6ea620f8ba01f5a0661d108a293f698ab9c5b4e"
+    }
+  },
+  "manifest_version": 1,
+  "scope": "original experiment artifacts; excludes this manifest and editorial review materials"
+}

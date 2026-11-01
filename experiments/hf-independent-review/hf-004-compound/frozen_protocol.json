@@ -1,0 +1,41 @@
+{
+  "baseline": "number of pixels >=8 /4 (floor); number of central 4x4 pixels >=8 /3 (floor)",
+  "baseline_cv_brier": 0.07211934008964425,
+  "caveats": [
+    "Original labels are public (operationally withheld in selection, not externally sealed).",
+    "Data is preexisting and not truly novel scientific discovery.",
+    "Only 3 vs 8 subset; coarse representation deliberately chosen; no claim about all-digit generalization.",
+    "No remote HodgeForm backend modified."
+  ],
+  "dataset_row_sha256": "f6b864d338028b98f313bc9c70260abeb78907aa7e0bd27a12abbbf20bdf400d",
+  "dataset_source": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html",
+  "frozen_features": {
+    "baseline": [],
+    "pair": [
+      41,
+      46
+    ],
+    "single": [
+      46
+    ]
+  },
+  "frozen_procedure": "No feature changes, new thresholds, or selection after holdout reveal",
+  "holdout_index_sha256": "9625e5ec711ee1487de29a64d56c64c87f65ecaf4c4f130dc069a36aa243bc89",
+  "holdout_label_sha256": "432ca238a82e7b9da08afe019318459d29b63d3c883c870580ec20ac5aed0730",
+  "holdout_n": 143,
+  "learner": "categorical-signature class frequency with Laplace-like shrinkage to training prior",
+  "pair_cv_brier": 0.06089970082495676,
+  "protocol": "HF-COMPOUND-004",
+  "raw_features": "8x8 pixel intensity >=8; zero-indexed flattened pixel indices",
+  "samples_total": 357,
+  "single_cv_brier": 0.06378981850307361,
+  "smoothing_alpha": 4.0,
+  "source": "sklearn.datasets.load_digits; UCI Optdigits, scikit-learn v1.8.0",
+  "split_fraction": 0.4,
+  "split_seed": 20261101,
+  "task": "distinguish digit 3 (0) vs digit 8 (1)",
+  "train_selection": "4-fold stratified CV Brier score, all variable pixels and all pairs",
+  "training_index_sha256": "07e110afb8316d40328a3a25e4a16aeb5c119d7cca6c87134b1fcb99ed66fa76",
+  "training_n": 214,
+  "usable_raw_fields": 47
+}

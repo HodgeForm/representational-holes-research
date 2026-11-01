@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "independent_reimplementation": true,
+  "separate_source": true,
+  "records": 143,
+  "precommit_sha256": "69fc9b7f7d0ba3af868bd40b7936e837ab165d27196b3ec2173d073082db4244",
+  "recomputed": {
+    "baseline": {
+      "brier": 0.106691,
+      "accuracy": 0.8741,
+      "conflicting_pairs": 446
+    },
+    "pair": {
+      "brier": 0.120237,
+      "accuracy": 0.8601,
+      "conflicting_pairs": 364
+    },
+    "single": {
+      "brier": 0.112427,
+      "accuracy": 0.8811,
+      "conflicting_pairs": 378
+    }
+  }
+}

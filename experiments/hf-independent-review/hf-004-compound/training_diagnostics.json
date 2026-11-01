@@ -1,0 +1,65 @@
+{
+  "baseline": {
+    "collision_rate": 0.106333,
+    "comparable_pairs": 3395,
+    "conflicting_pairs": 361,
+    "distinct_representations": 12,
+    "singleton_groups": 0
+  },
+  "pair": {
+    "collision_rate": 0.053759,
+    "comparable_pairs": 2288,
+    "conflicting_pairs": 123,
+    "distinct_representations": 21,
+    "singleton_groups": 4
+  },
+  "selection_top_pairs": [
+    [
+      "41,46",
+      0.06089970082495676
+    ],
+    [
+      "6,46",
+      0.06336352262274768
+    ],
+    [
+      "46,63",
+      0.06495059400187916
+    ],
+    [
+      "30,46",
+      0.06501455329063088
+    ],
+    [
+      "33,46",
+      0.06546868562991537
+    ],
+    [
+      "26,46",
+      0.06695597130209203
+    ],
+    [
+      "25,46",
+      0.06700784468464505
+    ],
+    [
+      "46,49",
+      0.0670252205854274
+    ],
+    [
+      "41,42",
+      0.06727127730198729
+    ],
+    [
+      "25,26",
+      0.06807838678681924
+    ]
+  ],
+  "single": {
+    "collision_rate": 0.063149,
+    "comparable_pairs": 2312,
+    "conflicting_pairs": 146,
+    "distinct_representations": 20,
+    "singleton_groups": 3
+  }
+}
