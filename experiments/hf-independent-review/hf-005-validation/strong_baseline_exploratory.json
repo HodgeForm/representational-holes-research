@@ -1,0 +1,32 @@
+{
+  "digits_0_vs_6": {
+    "all_feature_logit_brier": 0.005687176901796582,
+    "all_feature_logit_accuracy": 0.9930555555555556,
+    "selected_pair_or_single_brier": 0.06125269568896108,
+    "full_model_beats_selected": true
+  },
+  "digits_2_vs_5": {
+    "all_feature_logit_brier": 0.00017593202301511313,
+    "all_feature_logit_accuracy": 1.0,
+    "selected_pair_or_single_brier": 0.09561032839325612,
+    "full_model_beats_selected": true
+  },
+  "digits_4_vs_9": {
+    "all_feature_logit_brier": 0.01552305316470238,
+    "all_feature_logit_accuracy": 0.9862068965517241,
+    "selected_pair_or_single_brier": 0.05389715371903406,
+    "full_model_beats_selected": true
+  },
+  "wine_0_vs_1": {
+    "all_feature_logit_brier": 0.004917635784906768,
+    "all_feature_logit_accuracy": 1.0,
+    "selected_pair_or_single_brier": 0.04721582964987324,
+    "full_model_beats_selected": true
+  },
+  "breast_cancer": {
+    "all_feature_logit_brier": 0.02921866694665208,
+    "all_feature_logit_accuracy": 0.9605263157894737,
+    "selected_pair_or_single_brier": 0.07582091865354626,
+    "full_model_beats_selected": true
+  }
+}

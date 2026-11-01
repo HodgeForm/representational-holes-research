@@ -1,0 +1,48 @@
+{
+  "scope": "ONE shuffled-label run per source task; exploratory, not preregistered",
+  "controls": {
+    "digits_0_vs_6": {
+      "selected_fields": [],
+      "cv_gain": 0.0,
+      "null_holdout_brier_gain": 0.0,
+      "null_improves": false
+    },
+    "digits_2_vs_5": {
+      "selected_fields": [
+        12
+      ],
+      "cv_gain": 0.010521280319797932,
+      "null_holdout_brier_gain": -0.006762846765339099,
+      "null_improves": false
+    },
+    "digits_4_vs_9": {
+      "selected_fields": [
+        10,
+        41
+      ],
+      "cv_gain": 0.008147233017180677,
+      "null_holdout_brier_gain": -0.009866648559575237,
+      "null_improves": false
+    },
+    "wine_0_vs_1": {
+      "selected_fields": [
+        6,
+        10
+      ],
+      "cv_gain": 0.013842228279467933,
+      "null_holdout_brier_gain": -0.007627399675094195,
+      "null_improves": false
+    },
+    "breast_cancer": {
+      "selected_fields": [
+        15,
+        22
+      ],
+      "cv_gain": 0.006357969895619542,
+      "null_holdout_brier_gain": 0.0038532963727983508,
+      "null_improves": true
+    }
+  },
+  "tasks_improved": 1,
+  "null_passes_four_of_five": false
+}

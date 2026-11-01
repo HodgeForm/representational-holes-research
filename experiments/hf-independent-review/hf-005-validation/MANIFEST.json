@@ -1,0 +1,18 @@
+{
+  "file_checksums_sha256": {
+    "REPORT.md": "641950061e2550acb56b232f4349c3b42af820c49319f970c112ff915c89f99a",
+    "audit_independent.py": "26388b95646762c1e9334567566e9dcd8607ba7b97c48d2161846769cc2990e4",
+    "holdout_scoring.json": "358e71b09bf19e54af5d82ec566373148ed346d02e6becd4367785d8c8d5fca3",
+    "independent_audit.json": "dd9d449b2d0d72fb48aa2fccfdf07cae1ae0fb3af18c7dc955ea180e3169e255",
+    "negative_control_exploratory.json": "b7e35a63e03fa3eabb9ad2155a739562cb176f3724fc629380f3198e5e5023f2",
+    "negative_controls.py": "6760797a0328872fabaf01d15f166ae8ea5a37465d2b6c6f80898951b478f2f3",
+    "precommit.json": "8ff86b010834a668fcd7975cf913fd98cad53f3ba7e71616e30b386fe52c2231",
+    "run.py": "09cee4bd72837ea54a85a3756e94908953356d79bc15784a3c6db01bdba71e1e",
+    "strong_baseline.py": "6de0cf76d06e0fc7828f3294dc8ead6b5cf8cd162ac477525e243632c855faa5",
+    "strong_baseline_exploratory.json": "7bbdc892330880648c7a614fd6ea620f8ba01f5a0661d108a293f698ab9c5b4e"
+  },
+  "independent_authentication": "NOT AVAILABLE",
+  "local_verification": "PASS",
+  "original_scientific_claim": "UNVERIFIED",
+  "protocol": "HF-VALIDATION-005"
+}

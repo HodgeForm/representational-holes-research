@@ -1,0 +1,290 @@
+[
+  {
+    "id": "digit-38",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 4
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-167",
+    "language_view": {
+      "center_bucket": 3,
+      "ink_bucket": 6
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-174",
+    "language_view": {
+      "center_bucket": 3,
+      "ink_bucket": 5
+    },
+    "outcome": 1,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-15",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 4
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-61",
+    "language_view": {
+      "center_bucket": 3,
+      "ink_bucket": 6
+    },
+    "outcome": 1,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-172",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 4
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-183",
+    "language_view": {
+      "center_bucket": 4,
+      "ink_bucket": 5
+    },
+    "outcome": 1,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-123",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 5
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-218",
+    "language_view": {
+      "center_bucket": 1,
+      "ink_bucket": 5
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 1
+    }
+  },
+  {
+    "id": "digit-72",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 4
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 1
+    }
+  },
+  {
+    "id": "digit-151",
+    "language_view": {
+      "center_bucket": 3,
+      "ink_bucket": 5
+    },
+    "outcome": 1,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-310",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 4
+    },
+    "outcome": 1,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-115",
+    "language_view": {
+      "center_bucket": 1,
+      "ink_bucket": 3
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-34",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 4
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-85",
+    "language_view": {
+      "center_bucket": 4,
+      "ink_bucket": 6
+    },
+    "outcome": 1,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-293",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 6
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 1
+    }
+  },
+  {
+    "id": "digit-277",
+    "language_view": {
+      "center_bucket": 3,
+      "ink_bucket": 6
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 1
+    }
+  },
+  {
+    "id": "digit-250",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 4
+    },
+    "outcome": 1,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-140",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 5
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 1
+    }
+  },
+  {
+    "id": "digit-32",
+    "language_view": {
+      "center_bucket": 4,
+      "ink_bucket": 7
+    },
+    "outcome": 1,
+    "state": {
+      "chosen0": 1,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-299",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 5
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 1
+    }
+  },
+  {
+    "id": "digit-92",
+    "language_view": {
+      "center_bucket": 3,
+      "ink_bucket": 4
+    },
+    "outcome": 1,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-163",
+    "language_view": {
+      "center_bucket": 3,
+      "ink_bucket": 5
+    },
+    "outcome": 1,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 0
+    }
+  },
+  {
+    "id": "digit-278",
+    "language_view": {
+      "center_bucket": 2,
+      "ink_bucket": 5
+    },
+    "outcome": 0,
+    "state": {
+      "chosen0": 0,
+      "chosen1": 1
+    }
+  }
+]

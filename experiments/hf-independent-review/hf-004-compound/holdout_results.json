@@ -1,0 +1,63 @@
+{
+  "comparison": {
+    "pair_vs_baseline": {
+      "bootstrap_95pct_ci": [
+        -0.025306,
+        -0.002203
+      ],
+      "brier_gain_positive_is_better": -0.013546
+    },
+    "pair_vs_single": {
+      "bootstrap_95pct_ci": [
+        -0.014693,
+        -0.002097
+      ],
+      "brier_gain_positive_is_better": -0.007811
+    }
+  },
+  "holdout_count": 143,
+  "holdout_label_sha256": "432ca238a82e7b9da08afe019318459d29b63d3c883c870580ec20ac5aed0730",
+  "is_external_data": true,
+  "is_external_sealed_challenge": false,
+  "precommit_sha256": "69fc9b7f7d0ba3af868bd40b7936e837ab165d27196b3ec2173d073082db4244",
+  "protocol": "HF-COMPOUND-004",
+  "remote_plugin_modified": false,
+  "results": {
+    "baseline": {
+      "accuracy": 0.8741,
+      "brier": 0.106691,
+      "collisions": {
+        "collision_rate": 0.241734,
+        "comparable_pairs": 1845,
+        "conflicting_pairs": 446,
+        "distinct_representations": 13,
+        "singleton_groups": 4
+      },
+      "support_fraction": 0.993
+    },
+    "pair": {
+      "accuracy": 0.8601,
+      "brier": 0.120237,
+      "collisions": {
+        "collision_rate": 0.260372,
+        "comparable_pairs": 1398,
+        "conflicting_pairs": 364,
+        "distinct_representations": 20,
+        "singleton_groups": 8
+      },
+      "support_fraction": 0.958
+    },
+    "single": {
+      "accuracy": 0.8811,
+      "brier": 0.112427,
+      "collisions": {
+        "collision_rate": 0.254203,
+        "comparable_pairs": 1487,
+        "conflicting_pairs": 378,
+        "distinct_representations": 17,
+        "singleton_groups": 6
+      },
+      "support_fraction": 0.993
+    }
+  }
+}

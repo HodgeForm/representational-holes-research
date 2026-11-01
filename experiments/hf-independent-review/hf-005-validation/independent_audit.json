@@ -1,0 +1,123 @@
+{
+  "caveats": [
+    "same environment and public dataset sources, not an external evaluator",
+    "original script designed benchmark, not externally blinded",
+    "does not validate superiority over unrestricted full-feature standard predictors"
+  ],
+  "frozen_sha256": "4e5d6e02eec66a3ace20ddb4b5ad5928298af44e22727ea419ac3585899a8e0c",
+  "holdout_predictions_exactly_recomputed": 713,
+  "mean_brier_gain": 0.0772803395208288,
+  "status": "LOCAL_INDEPENDENT_CODE_REPLAY_PASS",
+  "tasks": {
+    "breast_cancer": {
+      "n_holdout": 228,
+      "predictions_recalculated": true,
+      "scores": {
+        "baseline": {
+          "accuracy": 0.8508771929824561,
+          "brier": 0.11245692323652474
+        },
+        "best_pair": {
+          "accuracy": 0.8947368421052632,
+          "brier": 0.07582091865355772
+        },
+        "best_single": {
+          "accuracy": 0.8596491228070176,
+          "brier": 0.08707996703957135
+        },
+        "deployed": {
+          "accuracy": 0.8947368421052632,
+          "brier": 0.07582091865355772
+        }
+      }
+    },
+    "digits_0_vs_6": {
+      "n_holdout": 144,
+      "predictions_recalculated": true,
+      "scores": {
+        "baseline": {
+          "accuracy": 0.7361111111111112,
+          "brier": 0.17818810195407692
+        },
+        "best_pair": {
+          "accuracy": 0.9652777777777778,
+          "brier": 0.061789290756104745
+        },
+        "best_single": {
+          "accuracy": 0.9652777777777778,
+          "brier": 0.06125269568893056
+        },
+        "deployed": {
+          "accuracy": 0.9652777777777778,
+          "brier": 0.06125269568893056
+        }
+      }
+    },
+    "digits_2_vs_5": {
+      "n_holdout": 144,
+      "predictions_recalculated": true,
+      "scores": {
+        "baseline": {
+          "accuracy": 0.6527777777777778,
+          "brier": 0.21815920538473782
+        },
+        "best_pair": {
+          "accuracy": 0.8611111111111112,
+          "brier": 0.09561032839328301
+        },
+        "best_single": {
+          "accuracy": 0.9097222222222222,
+          "brier": 0.08866559225039689
+        },
+        "deployed": {
+          "accuracy": 0.8611111111111112,
+          "brier": 0.09561032839328301
+        }
+      }
+    },
+    "digits_4_vs_9": {
+      "n_holdout": 145,
+      "predictions_recalculated": true,
+      "scores": {
+        "baseline": {
+          "accuracy": 0.8068965517241379,
+          "brier": 0.13477376483521541
+        },
+        "best_pair": {
+          "accuracy": 0.9517241379310345,
+          "brier": 0.05389715371904549
+        },
+        "best_single": {
+          "accuracy": 0.9379310344827586,
+          "brier": 0.06797133647448568
+        },
+        "deployed": {
+          "accuracy": 0.9517241379310345,
+          "brier": 0.05389715371904549
+        }
+      }
+    },
+    "wine_0_vs_1": {
+      "n_holdout": 52,
+      "predictions_recalculated": true,
+      "scores": {
+        "baseline": {
+          "accuracy": 0.9230769230769231,
+          "brier": 0.07662062829821167
+        },
+        "best_pair": {
+          "accuracy": 0.9230769230769231,
+          "brier": 0.0472158296498058
+        },
+        "best_single": {
+          "accuracy": 0.9230769230769231,
+          "brier": 0.0472158296498058
+        },
+        "deployed": {
+          "accuracy": 0.9230769230769231,
+          "brier": 0.0472158296498058
+        }
+      }
+    }
+  }
+}

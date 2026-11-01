@@ -1,0 +1,41 @@
+{
+  "collisions": {
+    "base": {
+      "collision_rate": 0.506329,
+      "comparable_pairs": 3160,
+      "conflicting_pairs": 1600,
+      "distinct_representations": 1,
+      "singleton_groups": 0
+    },
+    "field0": {
+      "collision_rate": 0.512821,
+      "comparable_pairs": 1560,
+      "conflicting_pairs": 800,
+      "distinct_representations": 2,
+      "singleton_groups": 0
+    },
+    "field1": {
+      "collision_rate": 0.512821,
+      "comparable_pairs": 1560,
+      "conflicting_pairs": 800,
+      "distinct_representations": 2,
+      "singleton_groups": 0
+    },
+    "joint01": {
+      "collision_rate": 0.0,
+      "comparable_pairs": 760,
+      "conflicting_pairs": 0,
+      "distinct_representations": 4,
+      "singleton_groups": 0
+    }
+  },
+  "cv_brier": {
+    "base": 0.25,
+    "field0": 0.25085127452026074,
+    "field1": 0.2626591581374083,
+    "joint01": 0.011742371411295135
+  },
+  "interpretation": "Unit test only, not evidence of new scientific discovery",
+  "status": "PASS",
+  "test": "synthetic_XOR_two_feature_repair"
+}
